@@ -6,13 +6,22 @@ const sorted = [...publications].sort((a, b) => b.year - a.year);
 ---
 
 <BaseLayout title="Publications" bgImage="/bg/publication.jpeg">
-  <h1>Publications</h1>
+  <h1>
+    <span data-lang="en">Publications</span>
+    <span data-lang="zh">论文</span>
+  </h1>
 
   {sorted.length === 0 ? (
-    <p class="empty">
-      Publication list will appear here. Add entries to <code>src/data/publications.ts</code> for now;
-      once the INSPIRE-HEP profile is approved, this page will auto-update from the API.
-    </p>
+    <>
+      <p class="empty" data-lang="en">
+        Publication list will appear here. Add entries to <code>src/data/publications.ts</code> for now;
+        once the INSPIRE-HEP profile is approved, this page will auto-update from the API.
+      </p>
+      <p class="empty" data-lang="zh">
+        论文列表将在此显示。目前可在 <code>src/data/publications.ts</code> 中手动添加条目；
+        INSPIRE-HEP 个人主页通过审核后，此页将通过 API 自动更新。
+      </p>
+    </>
   ) : (
     <ul class="pub-list">
       {sorted.map((pub) => (

@@ -101,10 +101,17 @@ nav.site-nav .container {
   justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  gap: 1rem;
 }
 
 nav.site-nav .brand {
   font-weight: 600;
+}
+
+nav.site-nav .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 nav.site-nav ul {
@@ -113,6 +120,31 @@ nav.site-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+html[lang="en"] [data-lang="zh"] { display: none; }
+html[lang="zh"] [data-lang="en"] { display: none; }
+
+.lang-toggle {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.lang-toggle button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+
+.lang-toggle button[aria-pressed="true"] {
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
 }
 
 footer.site-footer {

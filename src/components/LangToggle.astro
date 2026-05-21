@@ -1,0 +1,32 @@
+<div class="lang-toggle" role="group" aria-label="Language">
+  <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+  <button type="button" data-set-lang="zh" aria-pressed="false">中</button>
+</div>
+
+<script is:inline>
+  (function () {
+    var current = document.documentElement.lang === 'zh' ? 'zh' : 'en';
+    var buttons = document.querySelectorAll('[data-set-lang]');
+    buttons.forEach(function (btn) {
+      btn.setAttribute(
+        'aria-pressed',
+        btn.dataset.setLang === current ? 'true' : 'false'
+      );
+      btn.addEventListener('click', function () {
+        var lang = btn.dataset.setLang;
+        document.documentElement.lang = lang;
+        try {
+          localStorage.setItem('lang', lang);
+        } catch (e) {}
+        document
+          .querySelectorAll('[data-set-lang]')
+          .forEach(function (b) {
+            b.setAttribute(
+              'aria-pressed',
+              b.dataset.setLang === lang ? 'true' : 'false'
+            );
+          });
+      });
+    });
+  })();
+</script>

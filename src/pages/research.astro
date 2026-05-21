@@ -3,66 +3,126 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Research" bgImage="/bg/academic.jpeg">
-  <h1>Research</h1>
-  <p>
-    My main research is in gravitational-wave detection within the LIGO Scientific
-    Collaboration, with a focus on low-latency signal processing. I also have prior
-    work in statistical physics from my undergraduate years.
-  </p>
+  <div data-lang="en">
+    <h1>Research</h1>
+    <p>
+      My main research is in gravitational-wave detection within the LIGO Scientific
+      Collaboration, with a focus on low-latency signal processing. I also have prior
+      work in statistical physics from my undergraduate years.
+    </p>
 
-  <h2>Gravitational-Wave Detection (LIGO)</h2>
+    <h2>Gravitational-Wave Detection (LIGO)</h2>
 
-  <div class="card-stack">
-    <article class="project-card">
-      <h3>Targeted Search for GstLAL</h3>
-      <p>
-        Co-architected the &ldquo;Targeted Search&rdquo; method for GstLAL, integrating
-        electromagnetic-counterpart data as Bayesian priors. By concentrating sensitivity
-        around joint multi-messenger candidates, the approach improves signal-detection
-        sensitivity by roughly three orders of magnitude (~1000&times;) while keeping the
-        same low-latency profile.
-      </p>
-    </article>
+    <div class="card-stack">
+      <article class="project-card">
+        <h3>Targeted Search for GstLAL</h3>
+        <p>
+          Co-architected the &ldquo;Targeted Search&rdquo; method for GstLAL, integrating
+          electromagnetic-counterpart data as Bayesian priors. By concentrating sensitivity
+          around joint multi-messenger candidates, the approach improves signal-detection
+          sensitivity by roughly three orders of magnitude (~1000&times;) while keeping the
+          same low-latency profile.
+        </p>
+      </article>
 
-    <article class="project-card">
-      <h3>Intermediate-Mass Black Hole Search (GWTC-5)</h3>
-      <p>
-        Led the Intermediate-Mass Black Hole (IMBH) offline search for the GWTC-5
-        production run. Refined background-noise estimation models, achieving a 13%
-        improvement in noise-rejection accuracy over the previous baseline.
-      </p>
-    </article>
+      <article class="project-card">
+        <h3>Intermediate-Mass Black Hole Search (GWTC-5)</h3>
+        <p>
+          Led the Intermediate-Mass Black Hole (IMBH) offline search for the GWTC-5
+          production run. Refined background-noise estimation models, achieving a 13%
+          improvement in noise-rejection accuracy over the previous baseline.
+        </p>
+      </article>
 
-    <article class="project-card">
-      <h3>SGNL Pipeline — Parameter Estimation Review</h3>
-      <p>
-        Conducted parameter-estimation (PE) review for the SGNL pipeline. Optimized
-        statistical estimators and improved P-P plot consistency and result reliability
-        by 33%.
-      </p>
-    </article>
+      <article class="project-card">
+        <h3>SGNL Pipeline &mdash; Parameter Estimation Review</h3>
+        <p>
+          Conducted parameter-estimation (PE) review for the SGNL pipeline. Optimized
+          statistical estimators and improved P-P plot consistency and result reliability
+          by 33%.
+        </p>
+      </article>
 
-    <article class="project-card">
-      <h3>GstLAL Pipeline Engineering</h3>
-      <p>
-        Maintain the GstLAL hybrid C++/Python pipeline, which processes terabytes of
-        streaming detector data with sub-second latency to generate real-time
-        gravitational-wave triggers.
-      </p>
-    </article>
+      <article class="project-card">
+        <h3>GstLAL Pipeline Engineering</h3>
+        <p>
+          Maintain the GstLAL hybrid C++/Python pipeline, which processes terabytes of
+          streaming detector data with sub-second latency to generate real-time
+          gravitational-wave triggers.
+        </p>
+      </article>
+    </div>
+
+    <h2>Statistical Physics</h2>
+
+    <div class="card-stack">
+      <article class="project-card">
+        <h3>Dynamics, Statistics, and Task Allocation of Foraging Ants</h3>
+        <p class="role">First-author paper &middot; NTU, 2020 &ndash; 2022</p>
+        <p>
+          Developed an agent-based simulation of collective foraging combining MCMC with a
+          custom random-walk algorithm. Code-level optimization and sampling improvements
+          cut simulation runtime from days to hours (~50&times; speedup).
+        </p>
+      </article>
+    </div>
   </div>
 
-  <h2>Statistical Physics</h2>
+  <div data-lang="zh">
+    <h1>研究</h1>
+    <p>
+      我的主要研究方向是 LIGO 科学合作组织框架下的引力波探测，专注于低延迟信号处理。
+      本科期间也有统计物理方面的相关工作。
+    </p>
 
-  <div class="card-stack">
-    <article class="project-card">
-      <h3>Dynamics, Statistics, and Task Allocation of Foraging Ants</h3>
-      <p class="role">First-author paper &middot; NTU, 2020 &ndash; 2022</p>
-      <p>
-        Developed an agent-based simulation of collective foraging combining MCMC with a
-        custom random-walk algorithm. Code-level optimization and sampling improvements
-        cut simulation runtime from days to hours (~50&times; speedup).
-      </p>
-    </article>
+    <h2>引力波探测（LIGO）</h2>
+
+    <div class="card-stack">
+      <article class="project-card">
+        <h3>GstLAL 定向搜索方法</h3>
+        <p>
+          共同设计了 GstLAL 的「定向搜索」方法，将电磁对应体数据作为贝叶斯先验融入搜索流程。
+          通过将探测灵敏度集中在多信使联合候选事件附近，该方法在保持相同低延迟性能的前提下，
+          将信号探测灵敏度提升了约三个数量级（~1000&times;）。
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h3>中等质量黑洞搜索（GWTC-5）</h3>
+        <p>
+          主持 GWTC-5 生产运行中中等质量黑洞（IMBH）的离线搜索工作。改进了背景噪声估计模型，
+          相较此前的基线方案，噪声抑制准确率提升了 13%。
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h3>SGNL 流水线 &mdash; 参数估计审核</h3>
+        <p>
+          负责 SGNL 流水线的参数估计（PE）审核工作。优化统计估计量，使 P-P 图的一致性
+          与结果可靠性提升了 33%。
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h3>GstLAL 流水线工程</h3>
+        <p>
+          维护 GstLAL 的 C++/Python 混合流水线，以亚秒级延迟处理 TB 量级的实时探测器数据，
+          用于生成实时引力波候选事件。
+        </p>
+      </article>
+    </div>
+
+    <h2>统计物理</h2>
+
+    <div class="card-stack">
+      <article class="project-card">
+        <h3>觅食蚂蚁的动力学、统计与任务分配</h3>
+        <p class="role">第一作者论文 &middot; 南洋理工大学，2020 &ndash; 2022</p>
+        <p>
+          构建了基于代理（agent-based）的群体觅食模拟，将 MCMC 与自定义随机游走算法相结合。
+          通过代码层优化与采样策略改进，将模拟运行时间从数天缩短至数小时（~50&times; 加速）。
+        </p>
+      </article>
+    </div>
   </div>
 </BaseLayout>

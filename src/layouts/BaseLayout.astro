@@ -17,6 +17,16 @@ const pageTitle = title ? `${title} — ${site.name}` : site.name;
 <!doctype html>
 <html lang="en">
   <head>
+    <script is:inline>
+      (function () {
+        try {
+          var saved = localStorage.getItem('lang');
+          if (saved === 'zh' || saved === 'en') {
+            document.documentElement.lang = saved;
+          }
+        } catch (e) {}
+      })();
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>

@@ -3,26 +3,41 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { site } from '../data/site';
 ---
 
-<BaseLayout description={site.bio} bgImage="/bg/general.jpeg">
+<BaseLayout description={site.bio.en} bgImage="/bg/general.jpeg">
   <section class="hero">
     {site.photoUrl && (
       <img src={site.photoUrl} alt={`Photo of ${site.name}`} />
     )}
     <div class="meta">
       <h1>{site.name}</h1>
-      <p class="role">{site.role}</p>
-      <p class="role">{site.affiliation} &middot; {site.location}</p>
+      <p class="role">
+        <span data-lang="en">{site.role.en}</span>
+        <span data-lang="zh">{site.role.zh}</span>
+      </p>
+      <p class="role">
+        <span data-lang="en">{site.affiliation.en} &middot; {site.location.en}</span>
+        <span data-lang="zh">{site.affiliation.zh} &middot; {site.location.zh}</span>
+      </p>
       <ul class="links">
         {site.links.map((link) => (
           <li><a href={link.url} target="_blank" rel="noopener">{link.label}</a></li>
         ))}
-        <li><a href={`mailto:${site.email}`}>Email</a></li>
+        <li>
+          <a href={`mailto:${site.email}`}>
+            <span data-lang="en">Email</span>
+            <span data-lang="zh">邮箱</span>
+          </a>
+        </li>
       </ul>
     </div>
   </section>
 
   <section>
-    <h2>About</h2>
-    <p>{site.bio}</p>
+    <h2>
+      <span data-lang="en">About</span>
+      <span data-lang="zh">关于</span>
+    </h2>
+    <p data-lang="en">{site.bio.en}</p>
+    <p data-lang="zh">{site.bio.zh}</p>
   </section>
 </BaseLayout>

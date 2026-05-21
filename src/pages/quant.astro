@@ -3,47 +3,90 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Quant" bgImage="/bg/quant.jpeg">
-  <h1>Quantitative Trading</h1>
-  <p>
-    Side projects applying signal-processing and statistical methods from physics to
-    financial markets. Interactive plots will land on individual project pages here as
-    they're ready.
-  </p>
+  <div data-lang="en">
+    <h1>Quantitative Trading</h1>
+    <p>
+      Side projects applying signal-processing and statistical methods from physics to
+      financial markets. Interactive plots will land on individual project pages here as
+      they're ready.
+    </p>
 
-  <div class="card-stack">
-    <article class="project-card">
-      <h3>Cross-Sectional Equity Momentum Pipeline</h3>
-      <p class="role">
-        Python &middot; S&amp;P 500 &middot; Apr 2026 &ndash; Present &middot;
-        <a href="https://github.com/NoahZ969/momentum-pipeline" target="_blank" rel="noopener">GitHub</a>
-      </p>
-      <p>
-        An end-to-end quantitative research pipeline, validated by reproducing the
-        well-documented 12&ndash;1 cross-sectional momentum anomaly (Jegadeesh &amp;
-        Titman 1993; Asness, Moskowitz &amp; Pedersen 2013). Built around a
-        pre-registered analysis plan: point-in-time S&amp;P 500 membership to
-        eliminate survivorship bias, in-sample 2005&ndash;2019 with a frozen
-        2020&ndash;2025 holdout, and pre-committed interpretation buckets for the
-        resulting Sharpe. The goal is a measurement apparatus I can trust &mdash;
-        once validated, the pipeline becomes the substrate for evaluating novel
-        hypotheses with calibrated confidence.
-      </p>
-    </article>
+    <div class="card-stack">
+      <article class="project-card">
+        <h3>Cross-Sectional Equity Momentum Pipeline</h3>
+        <p class="role">
+          Python &middot; S&amp;P 500 &middot; Apr 2026 &ndash; Present &middot;
+          <a href="https://github.com/NoahZ969/momentum-pipeline" target="_blank" rel="noopener">GitHub</a>
+        </p>
+        <p>
+          An end-to-end quantitative research pipeline, validated by reproducing the
+          well-documented 12&ndash;1 cross-sectional momentum anomaly (Jegadeesh &amp;
+          Titman 1993; Asness, Moskowitz &amp; Pedersen 2013). Built around a
+          pre-registered analysis plan: point-in-time S&amp;P 500 membership to
+          eliminate survivorship bias, in-sample 2005&ndash;2019 with a frozen
+          2020&ndash;2025 holdout, and pre-committed interpretation buckets for the
+          resulting Sharpe. The goal is a measurement apparatus I can trust &mdash;
+          once validated, the pipeline becomes the substrate for evaluating novel
+          hypotheses with calibrated confidence.
+        </p>
+      </article>
 
-    <article class="project-card">
-      <h3>High-Frequency Market Microstructure Signal Extraction</h3>
-      <p class="role">Python &middot; Kalman Filter &middot; MLE &middot; Aug 2025 &ndash; Present</p>
-      <p>
-        A Kalman filter that separates the efficient price signal from microstructure
-        noise (bid-ask bounce) in high-frequency Bitcoin tick data, modeling price as a
-        random walk with mean-reverting error. Process and measurement noise matrices
-        (Q and R) are calibrated by MLE; anchoring measurement noise to empirical
-        tick-size volatility resolves regime-switching overfitting. Benchmarked against
-        the EM algorithm (<code>pykalman</code>), with superior signal retention in
-        high-volatility regimes.
-      </p>
-    </article>
+      <article class="project-card">
+        <h3>High-Frequency Market Microstructure Signal Extraction</h3>
+        <p class="role">Python &middot; Kalman Filter &middot; MLE &middot; Aug 2025 &ndash; Present</p>
+        <p>
+          A Kalman filter that separates the efficient price signal from microstructure
+          noise (bid-ask bounce) in high-frequency Bitcoin tick data, modeling price as
+          a random walk with mean-reverting error. Process and measurement noise matrices
+          (Q and R) are calibrated by MLE; anchoring measurement noise to empirical
+          tick-size volatility resolves regime-switching overfitting. Benchmarked against
+          the EM algorithm (<code>pykalman</code>), with superior signal retention in
+          high-volatility regimes.
+        </p>
+      </article>
+    </div>
+
+    <p class="empty">More projects in progress.</p>
   </div>
 
-  <p class="empty">More projects in progress.</p>
+  <div data-lang="zh">
+    <h1>量化交易</h1>
+    <p>
+      将物理学中的信号处理与统计方法应用于金融市场的业余项目。未来的交互式可视化
+      将作为独立的项目子页面在此呈现。
+    </p>
+
+    <div class="card-stack">
+      <article class="project-card">
+        <h3>股票截面动量策略流水线</h3>
+        <p class="role">
+          Python &middot; S&amp;P 500 &middot; 2026 年 4 月 &ndash; 至今 &middot;
+          <a href="https://github.com/NoahZ969/momentum-pipeline" target="_blank" rel="noopener">GitHub</a>
+        </p>
+        <p>
+          一套端到端的量化研究流水线，通过复现广泛验证过的 12&ndash;1 截面动量异象
+          （Jegadeesh &amp; Titman 1993；Asness, Moskowitz &amp; Pedersen 2013）来验证其可靠性。
+          整个项目围绕预注册（pre-registered）的分析方案构建：采用按时间点的 S&amp;P 500
+          成分股以消除幸存者偏差；样本内为 2005&ndash;2019 年，2020&ndash;2025 年作为冻结的
+          样本外检验区间；并预先约定夏普比率结果的解读区间。目标不是策略本身的盈利能力，
+          而是建立一套可信赖的测量装置 &mdash; 一旦验证通过，这条流水线将成为之后评估
+          新假设时具备校准置信度的基础设施。
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h3>高频市场微观结构信号提取</h3>
+        <p class="role">Python &middot; 卡尔曼滤波 &middot; 极大似然估计 &middot; 2025 年 8 月 &ndash; 至今</p>
+        <p>
+          针对高频比特币逐笔数据构建卡尔曼滤波器，将有效价格信号与微观结构噪声
+          （买卖价差跳动）分离，把价格建模为带均值回复误差项的随机游走。通过极大似然估计
+          （MLE）校准过程噪声与测量噪声矩阵（Q, R）；将测量噪声锚定于经验上的最小变动单位
+          波动率，解决了状态切换带来的过拟合问题。与 EM 算法（<code>pykalman</code>）
+          进行了对比测试，在高波动区间表现出更优的信号保留能力。
+        </p>
+      </article>
+    </div>
+
+    <p class="empty">更多项目进行中。</p>
+  </div>
 </BaseLayout>

@@ -3,65 +3,131 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="CV" bgImage="/bg/general.jpeg">
-  <h1>CV</h1>
-  <p>
-    <a href="/cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
-  </p>
+  <div data-lang="en">
+    <h1>CV</h1>
+    <p>
+      <a href="/cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+    </p>
 
-  <h2>Education</h2>
-  <ul>
-    <li>
-      <strong>Ph.D. in Physics</strong>, Georgia Institute of Technology — Aug 2023 – Expected 2028<br />
-      Advisor: Surabhi Sachdev. Specialization: Gravitational-Wave Detection, GstLAL Pipeline, Low-Latency Signal Processing.
-    </li>
-    <li>
-      <strong>M.S. in Computational Science and Engineering</strong>, Georgia Institute of Technology — Aug 2023 – Expected 2025<br />
-      Relevant Coursework: High-Performance Computing, Computational Data Analysis, Modeling &amp; Simulation, Algorithms.
-    </li>
-    <li>
-      <strong>B.Sc. in Physics (First Class Honors)</strong>, Nanyang Technological University, Singapore — Aug 2019 – May 2023<br />
-      GPA: 4.62 / 5.00 (Major GPA: 5.00 / 5.00). Full Ministry of Education Scholarship.
-    </li>
-  </ul>
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <strong>Ph.D. in Physics</strong>, Georgia Institute of Technology &mdash; Aug 2023 &ndash; Expected 2028<br />
+        Advisor: Surabhi Sachdev. Specialization: Gravitational-Wave Detection, GstLAL Pipeline, Low-Latency Signal Processing.
+      </li>
+      <li>
+        <strong>M.S. in Computational Science and Engineering</strong>, Georgia Institute of Technology &mdash; Aug 2023 &ndash; Expected 2025<br />
+        Relevant Coursework: High-Performance Computing, Computational Data Analysis, Modeling &amp; Simulation, Algorithms.
+      </li>
+      <li>
+        <strong>B.Sc. in Physics (First Class Honors)</strong>, Nanyang Technological University, Singapore &mdash; Aug 2019 &ndash; May 2023<br />
+        GPA: 4.62 / 5.00 (Major GPA: 5.00 / 5.00). Full Ministry of Education Scholarship.
+      </li>
+    </ul>
 
-  <h2>Research &amp; Quantitative Experience</h2>
+    <h2>Research &amp; Quantitative Experience</h2>
 
-  <h3>Graduate Research Assistant — LIGO Scientific Collaboration</h3>
-  <p class="role">Georgia Institute of Technology &middot; Atlanta, GA &middot; Aug 2023 – Present</p>
-  <ul>
-    <li><strong>Search Algorithm Optimization:</strong> Co-architected the &ldquo;Targeted Search&rdquo; method for GstLAL by integrating electromagnetic (EM) counterpart data as Bayesian priors. Improved signal-detection sensitivity by three orders of magnitude (1000&times;) while maintaining the same latency profile.</li>
-    <li><strong>Production Analysis Lead:</strong> Led the Intermediate-Mass Black Hole (IMBH) offline search for the GWTC-5 production run. Refined background-noise estimation models, achieving a 13% improvement in noise-rejection accuracy over the previous baseline.</li>
-    <li><strong>Statistical Validation:</strong> Conducted parameter-estimation (PE) review for the SGNL pipeline. Optimized statistical estimators, improving P-P plot consistency and result reliability by 33%.</li>
-    <li><strong>Pipeline Engineering:</strong> Maintain the GstLAL hybrid C++/Python pipeline, processing terabytes of streaming data with sub-second latency for real-time trigger generation.</li>
-  </ul>
+    <h3>Graduate Research Assistant &mdash; LIGO Scientific Collaboration</h3>
+    <p class="role">Georgia Institute of Technology &middot; Atlanta, GA &middot; Aug 2023 &ndash; Present</p>
+    <ul>
+      <li><strong>Search Algorithm Optimization:</strong> Co-architected the &ldquo;Targeted Search&rdquo; method for GstLAL by integrating electromagnetic (EM) counterpart data as Bayesian priors. Improved signal-detection sensitivity by three orders of magnitude (1000&times;) while maintaining the same latency profile.</li>
+      <li><strong>Production Analysis Lead:</strong> Led the Intermediate-Mass Black Hole (IMBH) offline search for the GWTC-5 production run. Refined background-noise estimation models, achieving a 13% improvement in noise-rejection accuracy over the previous baseline.</li>
+      <li><strong>Statistical Validation:</strong> Conducted parameter-estimation (PE) review for the SGNL pipeline. Optimized statistical estimators, improving P-P plot consistency and result reliability by 33%.</li>
+      <li><strong>Pipeline Engineering:</strong> Maintain the GstLAL hybrid C++/Python pipeline, processing terabytes of streaming data with sub-second latency for real-time trigger generation.</li>
+    </ul>
 
-  <h3>Undergraduate Researcher — Stochastic Modeling &amp; Simulation</h3>
-  <p class="role">Nanyang Technological University &middot; Singapore &middot; May 2020 – Aug 2022</p>
-  <ul>
-    <li><strong>Algorithmic Speedup:</strong> First author of <em>Dynamics, Statistics, and Task Allocation of Foraging Ants</em>. Optimized the agent-based simulation by combining MCMC with a customized random-walk algorithm.</li>
-    <li><strong>Performance Gain:</strong> Reduced simulation runtime from days to hours (~50&times; speedup) through code optimization and efficient sampling strategies.</li>
-  </ul>
+    <h3>Undergraduate Researcher &mdash; Stochastic Modeling &amp; Simulation</h3>
+    <p class="role">Nanyang Technological University &middot; Singapore &middot; May 2020 &ndash; Aug 2022</p>
+    <ul>
+      <li><strong>Algorithmic Speedup:</strong> First author of <em>Dynamics, Statistics, and Task Allocation of Foraging Ants</em>. Optimized the agent-based simulation by combining MCMC with a customized random-walk algorithm.</li>
+      <li><strong>Performance Gain:</strong> Reduced simulation runtime from days to hours (~50&times; speedup) through code optimization and efficient sampling strategies.</li>
+    </ul>
 
-  <h2>Selected Quantitative Projects</h2>
+    <h2>Selected Quantitative Projects</h2>
 
-  <h3>High-Frequency Market Microstructure Signal Extraction</h3>
-  <p class="role">Python, Kalman Filter, MLE &middot; Aug 2025 – Present</p>
-  <ul>
-    <li><strong>State-Space Modeling:</strong> Developed a Kalman Filter to separate efficient price signals from microstructure noise (bid-ask bounce) in high-frequency Bitcoin tick data, modeling price evolution as a random walk with mean-reverting error.</li>
-    <li><strong>Constrained Optimization:</strong> Implemented Maximum Likelihood Estimation (MLE) to calibrate process / measurement noise matrices (Q and R). Diagnosed and resolved regime-switching overfitting by anchoring measurement noise to empirical tick-size volatility.</li>
-    <li><strong>Benchmarking:</strong> Validated custom manual implementation against the EM algorithm (via <code>pykalman</code>), demonstrating superior signal retention in high-volatility regimes.</li>
-  </ul>
+    <h3>High-Frequency Market Microstructure Signal Extraction</h3>
+    <p class="role">Python, Kalman Filter, MLE &middot; Aug 2025 &ndash; Present</p>
+    <ul>
+      <li><strong>State-Space Modeling:</strong> Developed a Kalman Filter to separate efficient price signals from microstructure noise (bid-ask bounce) in high-frequency Bitcoin tick data, modeling price evolution as a random walk with mean-reverting error.</li>
+      <li><strong>Constrained Optimization:</strong> Implemented Maximum Likelihood Estimation (MLE) to calibrate process / measurement noise matrices (Q and R). Diagnosed and resolved regime-switching overfitting by anchoring measurement noise to empirical tick-size volatility.</li>
+      <li><strong>Benchmarking:</strong> Validated custom manual implementation against the EM algorithm (via <code>pykalman</code>), demonstrating superior signal retention in high-volatility regimes.</li>
+    </ul>
 
-  <h2>Technical Skills</h2>
-  <ul>
-    <li><strong>Languages / Libraries:</strong> C++ (STL, Boost); Python (NumPy, SciPy, Pandas, ccxt, pykalman); SQL; LaTeX.</li>
-    <li><strong>Computation:</strong> High-Performance Computing (HPC), MPI, HTCondor, Git, Linux/Unix.</li>
-    <li><strong>Quantitative Methods:</strong> Monte Carlo Simulation (MCMC), Bayesian Inference, Time-Series Analysis, MLE, Signal Processing.</li>
-  </ul>
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Languages / Libraries:</strong> C++ (STL, Boost); Python (NumPy, SciPy, Pandas, ccxt, pykalman); SQL; LaTeX.</li>
+      <li><strong>Computation:</strong> High-Performance Computing (HPC), MPI, HTCondor, Git, Linux/Unix.</li>
+      <li><strong>Quantitative Methods:</strong> Monte Carlo Simulation (MCMC), Bayesian Inference, Time-Series Analysis, MLE, Signal Processing.</li>
+    </ul>
 
-  <h2>Awards</h2>
-  <ul>
-    <li><strong>Silver Medalist (2nd Place)</strong>, PLANCKS Physics Competition (Singapore) — May 2022.</li>
-    <li><strong>Best Presentation Award</strong>, Odyssey Research Symposium — Dec 2020.</li>
-  </ul>
+    <h2>Awards</h2>
+    <ul>
+      <li><strong>Silver Medalist (2nd Place)</strong>, PLANCKS Physics Competition (Singapore) &mdash; May 2022.</li>
+      <li><strong>Best Presentation Award</strong>, Odyssey Research Symposium &mdash; Dec 2020.</li>
+    </ul>
+  </div>
+
+  <div data-lang="zh">
+    <h1>简历</h1>
+    <p>
+      <a href="/cv.pdf" target="_blank" rel="noopener">下载简历（PDF）</a>
+    </p>
+
+    <h2>教育背景</h2>
+    <ul>
+      <li>
+        <strong>物理学博士</strong>，佐治亚理工学院 &mdash; 2023 年 8 月 &ndash; 预计 2028 年<br />
+        导师：Surabhi Sachdev。研究方向：引力波探测、GstLAL 流水线、低延迟信号处理。
+      </li>
+      <li>
+        <strong>计算科学与工程硕士</strong>，佐治亚理工学院 &mdash; 2023 年 8 月 &ndash; 预计 2025 年<br />
+        主要课程：高性能计算、计算数据分析、建模与仿真、算法。
+      </li>
+      <li>
+        <strong>物理学学士（一等荣誉）</strong>，南洋理工大学（新加坡）&mdash; 2019 年 8 月 &ndash; 2023 年 5 月<br />
+        GPA：4.62 / 5.00（专业 GPA：5.00 / 5.00）。获新加坡教育部全额奖学金。
+      </li>
+    </ul>
+
+    <h2>研究与量化经历</h2>
+
+    <h3>研究助理 &mdash; LIGO 科学合作组织</h3>
+    <p class="role">佐治亚理工学院 &middot; 亚特兰大，佐治亚州 &middot; 2023 年 8 月 &ndash; 至今</p>
+    <ul>
+      <li><strong>搜索算法优化：</strong>共同设计了 GstLAL 的「定向搜索」方法，将电磁（EM）对应体数据作为贝叶斯先验融入搜索流程。在保持相同低延迟性能的前提下，将信号探测灵敏度提升了三个数量级（1000&times;）。</li>
+      <li><strong>生产分析负责人：</strong>主持 GWTC-5 生产运行中中等质量黑洞（IMBH）的离线搜索工作。改进背景噪声估计模型，相较此前的基线方案，噪声抑制准确率提升了 13%。</li>
+      <li><strong>统计验证：</strong>负责 SGNL 流水线的参数估计（PE）审核。优化统计估计量，使 P-P 图的一致性与结果可靠性提升了 33%。</li>
+      <li><strong>流水线工程：</strong>维护 GstLAL 的 C++/Python 混合流水线，以亚秒级延迟处理 TB 量级的流式数据，用于实时触发候选事件的生成。</li>
+    </ul>
+
+    <h3>本科研究助理 &mdash; 随机建模与仿真</h3>
+    <p class="role">南洋理工大学 &middot; 新加坡 &middot; 2020 年 5 月 &ndash; 2022 年 8 月</p>
+    <ul>
+      <li><strong>算法加速：</strong><em>《觅食蚂蚁的动力学、统计与任务分配》</em>第一作者。将 MCMC 与自定义随机游走算法相结合，优化了基于代理的模拟。</li>
+      <li><strong>性能提升：</strong>通过代码优化与高效采样策略，将模拟运行时间从数天缩短至数小时（~50&times; 加速）。</li>
+    </ul>
+
+    <h2>精选量化项目</h2>
+
+    <h3>高频市场微观结构信号提取</h3>
+    <p class="role">Python、卡尔曼滤波、极大似然估计 &middot; 2025 年 8 月 &ndash; 至今</p>
+    <ul>
+      <li><strong>状态空间建模：</strong>构建卡尔曼滤波器，将高频比特币逐笔数据中的有效价格信号与微观结构噪声（买卖价差跳动）分离，并将价格演化建模为带均值回复误差项的随机游走。</li>
+      <li><strong>约束优化：</strong>通过极大似然估计（MLE）校准过程噪声与测量噪声矩阵（Q 与 R）。通过将测量噪声锚定于经验上的最小变动单位波动率，诊断并解决了状态切换造成的过拟合问题。</li>
+      <li><strong>对比验证：</strong>将自实现版本与 EM 算法（基于 <code>pykalman</code>）进行对比测试，在高波动区间下信号保留能力更优。</li>
+    </ul>
+
+    <h2>技术技能</h2>
+    <ul>
+      <li><strong>编程语言 / 库：</strong>C++（STL, Boost）；Python（NumPy, SciPy, Pandas, ccxt, pykalman）；SQL；LaTeX。</li>
+      <li><strong>计算环境：</strong>高性能计算（HPC）、MPI、HTCondor、Git、Linux/Unix。</li>
+      <li><strong>量化方法：</strong>蒙特卡洛模拟（MCMC）、贝叶斯推断、时间序列分析、极大似然估计、信号处理。</li>
+    </ul>
+
+    <h2>奖项</h2>
+    <ul>
+      <li><strong>银奖（第二名）</strong>，PLANCKS 物理学竞赛（新加坡）&mdash; 2022 年 5 月。</li>
+      <li><strong>最佳报告奖</strong>，Odyssey 研究研讨会 &mdash; 2020 年 12 月。</li>
+    </ul>
+  </div>
 </BaseLayout>

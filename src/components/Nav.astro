@@ -1,22 +1,31 @@
 ---
 import { site } from '../data/site';
+import LangToggle from './LangToggle.astro';
 
 const pages = [
-  { href: '/', label: 'About' },
-  { href: '/research', label: 'Research' },
-  { href: '/quant', label: 'Quant' },
-  { href: '/publications', label: 'Publications' },
-  { href: '/cv', label: 'CV' },
+  { href: '/', en: 'About', zh: '关于' },
+  { href: '/research', en: 'Research', zh: '研究' },
+  { href: '/quant', en: 'Quant', zh: '量化' },
+  { href: '/publications', en: 'Publications', zh: '论文' },
+  { href: '/cv', en: 'CV', zh: '简历' },
 ];
 ---
 
 <nav class="site-nav">
   <div class="container">
     <a class="brand" href="/">{site.name}</a>
-    <ul>
-      {pages.map((p) => (
-        <li><a href={p.href}>{p.label}</a></li>
-      ))}
-    </ul>
+    <div class="nav-right">
+      <ul>
+        {pages.map((p) => (
+          <li>
+            <a href={p.href}>
+              <span data-lang="en">{p.en}</span>
+              <span data-lang="zh">{p.zh}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <LangToggle />
+    </div>
   </div>
 </nav>
