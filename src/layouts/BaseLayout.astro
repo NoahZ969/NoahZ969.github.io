@@ -11,7 +11,7 @@ interface Props {
 }
 
 const { title, description, bgImage } = Astro.props;
-const pageTitle = title ? `${title} — ${site.name}` : site.name;
+const pageTitle = title ? `${title} — ${site.name.en}` : site.name.en;
 ---
 
 <!doctype html>

@@ -9,7 +9,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "fetch-publications": "node scripts/fetch-publications.mjs"
+    "fetch-publications": "node scripts/fetch-publications.mjs",
+    "build-cv-zh": "node scripts/build-cv-zh.mjs"
   },
   "dependencies": {
     "astro": "^5.0.0"

@@ -9,7 +9,10 @@ export interface Bilingual {
 }
 
 export const site = {
-  name: 'Noah Zhang',
+  name: {
+    en: 'Noah Zhang',
+    zh: '张诺亚',
+  } satisfies Bilingual,
   role: {
     en: 'Graduate Researcher, LIGO Scientific Collaboration',
     zh: '博士研究生 · LIGO 科学合作组织',

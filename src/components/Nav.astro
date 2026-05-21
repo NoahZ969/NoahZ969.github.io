@@ -13,7 +13,10 @@ const pages = [
 
 <nav class="site-nav">
   <div class="container">
-    <a class="brand" href="/">{site.name}</a>
+    <a class="brand" href="/">
+      <span data-lang="en">{site.name.en}</span>
+      <span data-lang="zh">{site.name.zh}</span>
+    </a>
     <div class="nav-right">
       <ul>
         {pages.map((p) => (

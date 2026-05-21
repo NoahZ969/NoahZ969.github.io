@@ -6,10 +6,13 @@ import { site } from '../data/site';
 <BaseLayout description={site.bio.en} bgImage="/bg/general.jpeg">
   <section class="hero">
     {site.photoUrl && (
-      <img src={site.photoUrl} alt={`Photo of ${site.name}`} />
+      <img src={site.photoUrl} alt={`Photo of ${site.name.en}`} />
     )}
     <div class="meta">
-      <h1>{site.name}</h1>
+      <h1>
+        <span data-lang="en">{site.name.en}</span>
+        <span data-lang="zh">{site.name.zh}</span>
+      </h1>
       <p class="role">
         <span data-lang="en">{site.role.en}</span>
         <span data-lang="zh">{site.role.zh}</span>
