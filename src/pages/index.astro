@@ -5,10 +5,13 @@ import { site } from '../data/site';
 
 <BaseLayout description={site.bio}>
   <section class="hero">
-    <img src={site.photoUrl} alt={`Photo of ${site.name}`} />
+    {site.photoUrl && (
+      <img src={site.photoUrl} alt={`Photo of ${site.name}`} />
+    )}
     <div class="meta">
       <h1>{site.name}</h1>
-      <p class="role">{site.role} &middot; {site.affiliation}</p>
+      <p class="role">{site.role}</p>
+      <p class="role">{site.affiliation} &middot; {site.location}</p>
       <ul class="links">
         {site.links.map((link) => (
           <li><a href={link.url} target="_blank" rel="noopener">{link.label}</a></li>
