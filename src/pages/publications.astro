@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { publications } from '../data/publications';
+
+const sorted = [...publications].sort((a, b) => b.year - a.year);
+---
+
+<BaseLayout title="Publications">
+  <h1>Publications</h1>
+
+  {sorted.length === 0 ? (
+    <p class="empty">
+      Publication list will appear here. Add entries to <code>src/data/publications.ts</code> for now;
+      once the INSPIRE-HEP profile is approved, this page will auto-update from the API.
+    </p>
+  ) : (
+    <ul class="pub-list">
+      {sorted.map((pub) => (
+        <li>
+          <div class="title">{pub.title}</div>
+          <div class="meta">
+            <span>{pub.authors}</span>
+            {pub.venue && <span> &middot; <em>{pub.venue}</em></span>}
+            <span> &middot; {pub.year}</span>
+          </div>
+          <div class="meta">
+            {pub.arxivId && <a href={`https://arxiv.org/abs/${pub.arxivId}`} target="_blank" rel="noopener">arXiv:{pub.arxivId}</a>}
+            {pub.doi && <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noopener">doi:{pub.doi}</a>}
+            {pub.dccId && <a href={`https://dcc.ligo.org/${pub.dccId}`} target="_blank" rel="noopener">DCC:{pub.dccId}</a>}
+            {pub.url && <a href={pub.url} target="_blank" rel="noopener">Link</a>}
+          </div>
+        </li>
+      ))}
+    </ul>
+  )}
+</BaseLayout>

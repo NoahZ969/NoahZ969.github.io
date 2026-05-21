@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+---
+
+<BaseLayout description={site.bio}>
+  <section class="hero">
+    <img src={site.photoUrl} alt={`Photo of ${site.name}`} />
+    <div class="meta">
+      <h1>{site.name}</h1>
+      <p class="role">{site.role} &middot; {site.affiliation}</p>
+      <ul class="links">
+        {site.links.map((link) => (
+          <li><a href={link.url} target="_blank" rel="noopener">{link.label}</a></li>
+        ))}
+        <li><a href={`mailto:${site.email}`}>Email</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>About</h2>
+    <p>{site.bio}</p>
+  </section>
+</BaseLayout>
