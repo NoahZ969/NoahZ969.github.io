@@ -33,6 +33,32 @@ html {
 body {
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+body.has-bg::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: var(--page-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+body.has-bg::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.82);
+  z-index: -1;
+}
+
+@media (prefers-color-scheme: dark) {
+  body.has-bg::after {
+    background: rgba(17, 17, 17, 0.82);
+  }
 }
 
 .container {

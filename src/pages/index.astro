@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { site } from '../data/site';
 ---
 
-<BaseLayout description={site.bio}>
+<BaseLayout description={site.bio} bgImage="/bg/general.jpeg">
   <section class="hero">
     {site.photoUrl && (
       <img src={site.photoUrl} alt={`Photo of ${site.name}`} />

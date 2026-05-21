@@ -7,9 +7,10 @@ import { site } from '../data/site';
 interface Props {
   title?: string;
   description?: string;
+  bgImage?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, bgImage } = Astro.props;
 const pageTitle = title ? `${title} — ${site.name}` : site.name;
 ---
 
@@ -22,7 +23,10 @@ const pageTitle = title ? `${title} — ${site.name}` : site.name;
     {description && <meta name="description" content={description} />}
     <meta name="generator" content={Astro.generator} />
   </head>
-  <body>
+  <body
+    class={bgImage ? 'has-bg' : ''}
+    style={bgImage ? `--page-bg: url('${bgImage}')` : ''}
+  >
     <Nav />
     <main class="container">
       <slot />
