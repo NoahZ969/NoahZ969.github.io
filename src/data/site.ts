@@ -10,7 +10,7 @@ export const site = {
   affiliation: 'Georgia Institute of Technology',
   location: 'Atlanta, GA',
   bio: 'Ph.D. student in Physics at Georgia Tech, working with Prof. Surabhi Sachdev on gravitational-wave detection for the LIGO Scientific Collaboration. My research focuses on low-latency signal processing — the GstLAL pipeline, search algorithms for compact-binary mergers, and statistical methods for production analysis. I am also pursuing an M.S. in Computational Science and Engineering, and apply quantitative methods to high-frequency time-series and market microstructure.',
-  photoUrl: null as string | null,
+  photoUrl: '/photo.jpg' as string | null,
   email: 'zhangnuoya969@gmail.com',
   links: [
     { label: 'Google Scholar', url: '#' },
