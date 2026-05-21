@@ -166,17 +166,11 @@ footer.site-footer .container {
   font-style: italic;
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+.card-stack {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
   margin: 1rem 0;
-}
-
-@media (min-width: 600px) {
-  .project-grid {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .project-card {

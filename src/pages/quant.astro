@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Quant">
+  <h1>Quantitative Trading</h1>
+  <p>
+    Side projects applying signal-processing and statistical methods from physics to
+    financial markets. Interactive plots will land on individual project pages here as
+    they're ready.
+  </p>
+
+  <div class="card-stack">
+    <article class="project-card">
+      <h3>High-Frequency Market Microstructure Signal Extraction</h3>
+      <p class="role">Python &middot; Kalman Filter &middot; MLE &middot; Aug 2025 &ndash; Present</p>
+      <p>
+        A Kalman filter that separates the efficient price signal from microstructure
+        noise (bid-ask bounce) in high-frequency Bitcoin tick data, modeling price as a
+        random walk with mean-reverting error. Process and measurement noise matrices
+        (Q and R) are calibrated by MLE; anchoring measurement noise to empirical
+        tick-size volatility resolves regime-switching overfitting. Benchmarked against
+        the EM algorithm (<code>pykalman</code>), with superior signal retention in
+        high-volatility regimes.
+      </p>
+    </article>
+  </div>
+
+  <p class="empty">More projects in progress.</p>
+</BaseLayout>

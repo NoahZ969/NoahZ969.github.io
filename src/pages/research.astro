@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Research">
+  <h1>Research</h1>
+  <p>
+    My main research is in gravitational-wave detection within the LIGO Scientific
+    Collaboration, with a focus on low-latency signal processing. I also have prior
+    work in statistical physics from my undergraduate years.
+  </p>
+
+  <h2>Gravitational-Wave Detection (LIGO)</h2>
+
+  <div class="card-stack">
+    <article class="project-card">
+      <h3>Targeted Search for GstLAL</h3>
+      <p>
+        Co-architected the &ldquo;Targeted Search&rdquo; method for GstLAL, integrating
+        electromagnetic-counterpart data as Bayesian priors. By concentrating sensitivity
+        around joint multi-messenger candidates, the approach improves signal-detection
+        sensitivity by roughly three orders of magnitude (~1000&times;) while keeping the
+        same low-latency profile.
+      </p>
+    </article>
+
+    <article class="project-card">
+      <h3>Intermediate-Mass Black Hole Search (GWTC-5)</h3>
+      <p>
+        Led the Intermediate-Mass Black Hole (IMBH) offline search for the GWTC-5
+        production run. Refined background-noise estimation models, achieving a 13%
+        improvement in noise-rejection accuracy over the previous baseline.
+      </p>
+    </article>
+
+    <article class="project-card">
+      <h3>SGNL Pipeline — Parameter Estimation Review</h3>
+      <p>
+        Conducted parameter-estimation (PE) review for the SGNL pipeline. Optimized
+        statistical estimators and improved P-P plot consistency and result reliability
+        by 33%.
+      </p>
+    </article>
+
+    <article class="project-card">
+      <h3>GstLAL Pipeline Engineering</h3>
+      <p>
+        Maintain the GstLAL hybrid C++/Python pipeline, which processes terabytes of
+        streaming detector data with sub-second latency to generate real-time
+        gravitational-wave triggers.
+      </p>
+    </article>
+  </div>
+
+  <h2>Statistical Physics</h2>
+
+  <div class="card-stack">
+    <article class="project-card">
+      <h3>Dynamics, Statistics, and Task Allocation of Foraging Ants</h3>
+      <p class="role">First-author paper &middot; NTU, 2020 &ndash; 2022</p>
+      <p>
+        Developed an agent-based simulation of collective foraging combining MCMC with a
+        custom random-walk algorithm. Code-level optimization and sampling improvements
+        cut simulation runtime from days to hours (~50&times; speedup).
+      </p>
+    </article>
+  </div>
+</BaseLayout>
