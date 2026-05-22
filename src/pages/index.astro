@@ -27,8 +27,14 @@ import { site } from '../data/site';
         ))}
         <li>
           <a href={`mailto:${site.email}`}>
-            <span data-lang="en">Email</span>
-            <span data-lang="zh">邮箱</span>
+            <span data-lang="en">Email (GT)</span>
+            <span data-lang="zh">邮箱（学术）</span>
+          </a>
+        </li>
+        <li>
+          <a href={`mailto:${site.emailPersonal}`}>
+            <span data-lang="en">Email (personal)</span>
+            <span data-lang="zh">邮箱（个人）</span>
           </a>
         </li>
       </ul>

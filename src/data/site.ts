@@ -30,7 +30,8 @@ export const site = {
     zh: '佐治亚理工学院物理学博士生，师从 Surabhi Sachdev 教授，在 LIGO 科学合作组织从事引力波探测研究。研究方向为低延迟信号处理 —— GstLAL 流水线、致密双星并合事件的搜索算法，以及生产分析中的统计方法。同时攻读计算科学与工程硕士学位，并将量化方法应用于高频时间序列与市场微观结构。',
   } satisfies Bilingual,
   photoUrl: '/photo.jpg' as string | null,
-  email: 'zhangnuoya969@gmail.com',
+  email: 'nzhang352@gatech.edu',
+  emailPersonal: 'zhangnuoya969@gmail.com',
   links: [
     { label: 'Google Scholar', url: '#' },
     { label: 'INSPIRE-HEP', url: '#' },
