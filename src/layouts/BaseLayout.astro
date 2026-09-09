@@ -12,6 +12,9 @@ interface Props {
 
 const { title, description, bgImage } = Astro.props;
 const pageTitle = title ? `${title} — ${site.name.en}` : site.name.en;
+const metaDescription = description ?? site.tagline.en;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL('/photo.jpg', Astro.site);
 ---
 
 <!doctype html>
@@ -30,7 +33,21 @@ const pageTitle = title ? `${title} — ${site.name.en}` : site.name.en;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
-    {description && <meta name="description" content={description} />}
+    <meta name="description" content={metaDescription} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name.en} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={metaDescription} />
+    <meta name="twitter:image" content={ogImage} />
+
     <meta name="generator" content={Astro.generator} />
   </head>
   <body

@@ -2,7 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Research" bgImage="/bg/academic.jpeg">
+<BaseLayout
+  title="Research"
+  description="Gravitational-wave detection with the LIGO Scientific Collaboration: low-latency search pipelines, Bayesian targeted search, and statistical methods for production analysis."
+  bgImage="/bg/academic.jpeg"
+>
   <div data-lang="en">
     <h1>Research</h1>
     <p>
@@ -20,17 +24,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           Co-architected the &ldquo;Targeted Search&rdquo; method for GstLAL, integrating
           electromagnetic-counterpart data as Bayesian priors. By concentrating sensitivity
           around joint multi-messenger candidates, the approach improves signal-detection
-          sensitivity by roughly three orders of magnitude (~1000&times;) while keeping the
-          same low-latency profile.
+          sensitivity by 30 orders of magnitude while keeping the same low-latency profile.
         </p>
       </article>
 
       <article class="project-card">
         <h3>Intermediate-Mass Black Hole Search (GWTC-5)</h3>
         <p>
-          Led the Intermediate-Mass Black Hole (IMBH) offline search for the GWTC-5
-          production run. Refined background-noise estimation models, achieving a 13%
-          improvement in noise-rejection accuracy over the previous baseline.
+          Contributed to the Intermediate-Mass Black Hole (IMBH) offline search for the
+          GWTC-5 production run, covering data analysis and background statistics.
         </p>
       </article>
 
@@ -38,8 +40,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <h3>SGNL Pipeline &mdash; Parameter Estimation Review</h3>
         <p>
           Conducted parameter-estimation (PE) review for the SGNL pipeline. Optimized
-          statistical estimators and improved P-P plot consistency and result reliability
-          by 33%.
+          statistical estimators, improving P-P plot (probability-probability) consistency
+          and result reliability by 33%.
         </p>
       </article>
 
@@ -48,7 +50,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <p>
           Maintain the GstLAL hybrid C++/Python pipeline, which processes terabytes of
           streaming detector data with sub-second latency to generate real-time
-          gravitational-wave triggers.
+          gravitational-wave triggers. Contributed to the Gravitational-Wave Transient
+          Catalog (GWTC) study.
         </p>
       </article>
     </div>
@@ -83,23 +86,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <p>
           共同设计了 GstLAL 的「定向搜索」方法，将电磁对应体数据作为贝叶斯先验融入搜索流程。
           通过将探测灵敏度集中在多信使联合候选事件附近，该方法在保持相同低延迟性能的前提下，
-          将信号探测灵敏度提升了约三个数量级（~1000&times;）。
+          将信号探测灵敏度提升了 30 个数量级。
         </p>
       </article>
 
       <article class="project-card">
         <h3>中等质量黑洞搜索（GWTC-5）</h3>
         <p>
-          主持 GWTC-5 生产运行中中等质量黑洞（IMBH）的离线搜索工作。改进了背景噪声估计模型，
-          相较此前的基线方案，噪声抑制准确率提升了 13%。
+          参与 GWTC-5 生产运行中中等质量黑洞（IMBH）的离线搜索工作，负责数据分析与背景统计。
         </p>
       </article>
 
       <article class="project-card">
         <h3>SGNL 流水线 &mdash; 参数估计审核</h3>
         <p>
-          负责 SGNL 流水线的参数估计（PE）审核工作。优化统计估计量，使 P-P 图的一致性
-          与结果可靠性提升了 33%。
+          负责 SGNL 流水线的参数估计（PE）审核工作。优化统计估计量，使 P-P 图（概率-概率图）
+          的一致性与结果可靠性提升了 33%。
         </p>
       </article>
 
@@ -107,7 +109,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <h3>GstLAL 流水线工程</h3>
         <p>
           维护 GstLAL 的 C++/Python 混合流水线，以亚秒级延迟处理 TB 量级的实时探测器数据，
-          用于生成实时引力波候选事件。
+          用于生成实时引力波候选事件。参与引力波暂现源目录（GWTC）研究。
         </p>
       </article>
     </div>
