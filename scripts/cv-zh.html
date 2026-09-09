@@ -10,7 +10,7 @@
   }
 
   body {
-    font-family: 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans SC', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10pt;
     line-height: 1.44;
     color: #1a1a1a;
@@ -134,7 +134,7 @@
   </div>
   <div class="entry-header">
     <span class="role">计算科学与工程（CSE）硕士</span>
-    <span class="entry-meta">2023 年 8 月 &ndash; 预计 2025 年</span>
+    <span class="entry-meta">2023 年 8 月 &ndash; 2025 年 5 月</span>
   </div>
   <ul>
     <li>主要课程：高性能计算、计算数据分析、建模与仿真、算法。</li>
@@ -160,7 +160,7 @@
 <ul class="skills-list">
   <li><strong>编程语言 / 库：</strong>C++（STL, Boost）；Python（NumPy, SciPy, Pandas, ccxt, pykalman）；SQL；LaTeX</li>
   <li><strong>计算环境：</strong>高性能计算（HPC）、MPI、HTCondor、Git、Linux/Unix</li>
-  <li><strong>量化方法：</strong>蒙特卡洛模拟（MCMC）、贝叶斯推断、时间序列分析、极大似然估计、信号处理</li>
+  <li><strong>量化方法：</strong>蒙特卡洛模拟（MCMC）、贝叶斯推断、时间序列分析、极大似然估计、信号处理、Alpha 研究（WorldQuant BRAIN）</li>
 </ul>
 
 <h2>研究与量化经历</h2>
@@ -175,10 +175,10 @@
     <span class="entry-meta">美国佐治亚州亚特兰大</span>
   </div>
   <ul>
-    <li><strong>搜索算法优化：</strong>共同设计了 GstLAL 的「定向搜索」方法，将电磁（EM）对应体数据作为贝叶斯先验融入搜索流程。在保持相同低延迟性能的前提下，将信号探测灵敏度提升了 <strong>三个数量级（1000&times;）</strong>。</li>
-    <li><strong>生产分析负责人：</strong>主持 GWTC-5 生产运行中中等质量黑洞（IMBH）的离线搜索工作。改进背景噪声估计模型，相较此前的基线方案，噪声抑制准确率提升了 <strong>13%</strong>。</li>
-    <li><strong>统计验证：</strong>负责 SGNL 流水线的参数估计（PE）审核。优化统计估计量，使 P-P 图的一致性与结果可靠性提升了 <strong>33%</strong>。</li>
-    <li><strong>流水线工程：</strong>维护 GstLAL 的 <strong>C++/Python</strong> 混合流水线，以 <strong>亚秒级延迟</strong>处理 TB 量级的流式数据，用于实时触发候选事件的生成。</li>
+    <li><strong>搜索算法优化：</strong>共同设计了 GstLAL 的「定向搜索」方法，将电磁（EM）对应体数据作为贝叶斯先验融入搜索流程。在保持相同低延迟性能的前提下，将信号探测灵敏度提升了 <strong>30 个数量级</strong>。</li>
+    <li><strong>统计验证：</strong>负责 SGNL 流水线的参数估计（PE）审核。优化统计估计量，使 P-P 图（概率-概率图）的一致性与结果可靠性提升了 <strong>33%</strong>。</li>
+    <li><strong>生产分析：</strong>参与 GWTC-5 生产运行中中等质量黑洞（IMBH）的离线搜索工作（数据分析与背景统计）。</li>
+    <li><strong>流水线工程：</strong>维护 GstLAL 的 <strong>C++/Python</strong> 混合流水线，以 <strong>亚秒级延迟</strong>处理 TB 量级的流式数据，用于实时触发候选事件的生成。参与引力波暂现源目录（GWTC）研究。</li>
   </ul>
 </div>
 
@@ -201,6 +201,21 @@
 
 <div class="entry">
   <div class="entry-header">
+    <strong>WorldQuant 国际量化锦标赛 2026 &ndash; 第二阶段（美国赛区）</strong>
+    <span class="entry-meta">2026 年 3 月 &ndash; 2026 年 5 月</span>
+  </div>
+  <div class="entry-header">
+    <span class="role">BRAIN、Fast Expression DSL</span>
+  </div>
+  <ul>
+    <li><strong>过拟合诊断：</strong>通过消融实验检验复合 alpha 的信号归因：一个以基本面为核心的复合 alpha（夏普比率 1.59）在剔除其量价分量后骤降至 <strong>&minus;0.35</strong>，说明该 alpha 只是继承了资产池原有的量价信号，而非提供了新的分散化来源。据此确立了在任何多字段组合前先行检验各成分 <strong>独立夏普比率</strong> 的流程。</li>
+    <li><strong>系统化因子搜索：</strong>在 BRAIN 的各数据子类别上统一套用六种变换模板，累计记录 <strong>100+ 组（字段 &times; 变换）</strong>模拟，将字段选择与公式设计解耦，把 alpha 搜索转化为可量化的命中率问题。</li>
+    <li><strong>成果：</strong>在 TOP3000 美股股票池上提交 <strong>11</strong> 个横截面 alpha（delay-1，子行业中性）；其中表现最佳的四个在 2019&ndash;2023 完整区间的样本外 <strong>夏普比率达 1.3&ndash;2.0</strong>（单个最优为 1.98），换手率 20&ndash;45%，最大回撤 &lt; 7%，自相关性 &lt; 0.7。从 <strong>156,000+</strong> 名参赛者中晋级第二阶段。</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="entry-header">
     <strong>股票截面动量策略流水线</strong>
     <span class="entry-meta">2026 年 4 月 &ndash; 至今</span>
   </div>
@@ -217,7 +232,7 @@
 <div class="entry">
   <div class="entry-header">
     <strong>高频市场微观结构信号提取</strong> | Python、卡尔曼滤波、MLE
-    <span class="entry-meta">2025 年 8 月 &ndash; 至今</span>
+    <span class="entry-meta">2025 年 8 月 &ndash; 2026 年 2 月</span>
   </div>
   <ul>
     <li><strong>状态空间建模：</strong>构建 <strong>卡尔曼滤波器</strong>，将高频比特币逐笔数据中的有效价格信号与微观结构噪声（买卖价差跳动）分离，并将价格演化建模为带均值回复误差项的随机游走。</li>

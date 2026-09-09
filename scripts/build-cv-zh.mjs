@@ -3,7 +3,7 @@
 
 import { execFileSync } from 'node:child_process';
 import { existsSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import path from 'node:path';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -15,6 +15,10 @@ const chromeCandidates = [
   '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
   '/Applications/Chromium.app/Contents/MacOS/Chromium',
   '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge',
+  'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+  'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
+  'C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe',
+  'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
 ];
 
 const chrome = chromeCandidates.find((p) => existsSync(p));
@@ -28,7 +32,7 @@ execFileSync(chrome, [
   '--disable-gpu',
   '--no-pdf-header-footer',
   `--print-to-pdf=${pdfPath}`,
-  `file://${htmlPath}`,
+  pathToFileURL(htmlPath).href,
 ], { stdio: 'inherit' });
 
 console.log(`Wrote ${pdfPath}`);
