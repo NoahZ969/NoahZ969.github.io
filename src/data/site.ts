@@ -33,13 +33,12 @@ export const site = {
   email: 'nzhang352@gatech.edu',
   emailPersonal: 'zhangnuoya969@gmail.com',
   links: [
-    { label: 'Google Scholar', url: '#' },
-    { label: 'INSPIRE-HEP', url: '#' },
+    { label: 'Google Scholar', url: 'https://scholar.google.com/citations?user=xOrW2S8AAAAJ&hl=en' },
     { label: 'LIGO DCC', url: '#' },
     { label: 'ORCID', url: '#' },
     { label: 'arXiv', url: '#' },
-    { label: 'LinkedIn', url: '#' },
+    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/noah-zhang-2b88981b7/' },
     { label: 'GitHub', url: 'https://github.com/NoahZ969' },
-    { label: 'GitLab', url: '#' },
+    { label: 'GitLab', url: 'https://git.ligo.org/noah.zhang' },
   ] satisfies ExternalLink[],
 };
