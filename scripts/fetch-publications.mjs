@@ -83,5 +83,10 @@ const publications = articles
   .sort((a, b) => (b.year ?? 0) - (a.year ?? 0) || (b.citedBy ?? 0) - (a.citedBy ?? 0));
 
 const previous = JSON.parse(readFileSync(outPath, 'utf8'));
-writeFileSync(outPath, JSON.stringify(publications, null, 2) + '\n');
-console.log(`Wrote ${publications.length} publications (was ${previous.length}).`);
+const payload = {
+  source: 'serpapi',
+  syncedAt: new Date().toISOString(),
+  publications,
+};
+writeFileSync(outPath, JSON.stringify(payload, null, 2) + '\n');
+console.log(`Wrote ${publications.length} publications (was ${previous.publications.length}).`);

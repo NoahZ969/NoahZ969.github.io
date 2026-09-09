@@ -1,414 +1,418 @@
-[
-  {
-    "title": "Black hole spectroscopy and tests of general relativity with GW250114",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "Physical Review Letters 136 (4), 041403, 2026",
-    "citedBy": 106,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:j3f4tGmQtD8C"
-  },
-  {
-    "title": "GWTC-4.0: constraints on the cosmic expansion rate and modified gravitational-wave propagation",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "The Astrophysical Journal Letters 1007 (1), L17, 2026",
-    "citedBy": 38,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:_FxGoFyzp5QC"
-  },
-  {
-    "title": "Open data from LIGO, Virgo, and KAGRA through the first part of the fourth observing run",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "The Astrophysical Journal 1004 (2), 232, 2026",
-    "citedBy": 35,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:YsMSGLbcyi4C"
-  },
-  {
-    "title": "GWTC-4.0: Tests of General Relativity. I. Overview and General Tests",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2603.19019, 2026",
-    "citedBy": 23,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:M3ejUd6NZC8C",
-    "arxivId": "2603.19019"
-  },
-  {
-    "title": "GWTC-5.0: Observations from the Second Part of the Fourth LIGO-Virgo-KAGRA Observing Run and Updates to the Gravitational-Wave Transient Catalog",
-    "authors": "AG Abac, A Abe, I Abouelfettouh, F Acernese, K Ackley, A Adam, ...",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2605.27225, 2026",
-    "citedBy": 18,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:RHpTSmoSYBkC",
-    "arxivId": "2605.27225"
-  },
-  {
-    "title": "GWTC-4.0: Tests of general relativity. II. Parameterized tests",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2603.19020, 2026",
-    "citedBy": 13,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:4TOpqqG69KYC",
-    "arxivId": "2603.19020"
-  },
-  {
-    "title": "GWTC-4.0: Tests of General Relativity. III. Tests of the Remnants",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2603.19021, 2026",
-    "citedBy": 12,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:qxL8FJ1GzNcC",
-    "arxivId": "2603.19021"
-  },
-  {
-    "title": "All-sky search for long-duration gravitational-wave transients in the first part of the fourth LIGO-Virgo-KAGRA observing run",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "Physical Review D 113 (8), 082004, 2026",
-    "citedBy": 11,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:UeHWp8X0CEIC"
-  },
-  {
-    "title": "GW230814: investigation of a loud gravitational-wave signal observed with a single detector",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "The Astrophysical Journal Letters 1004 (2), L23, 2026",
-    "citedBy": 10,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:TQgYirikUcIC"
-  },
-  {
-    "title": "Directional search for persistent gravitational waves: Results from the first part of LIGO-Virgo-KAGRA’s fourth observing run",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "Physical Review D 114 (2), 022001, 2026",
-    "citedBy": 7,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:ufrVoPGSRksC"
-  },
-  {
-    "title": "Constraints on gravitational waves from the 2024 Vela pulsar glitch",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "The Astrophysical Journal 1005 (1), 12, 2026",
-    "citedBy": 6,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:kNdYIx-mwKoC"
-  },
-  {
-    "title": "Narrowband searches for continuous gravitational waves from known pulsars in the first two parts of the fourth LIGO–Virgo–KAGRA observing run",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, A Adam, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "The Astrophysical Journal 1005 (2), 221, 2026",
-    "citedBy": 5,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:9ZlFYXVOiuMC"
-  },
-  {
-    "title": "All-sky Searches for Continuous Gravitational Waves from Isolated Neutron Stars in the Data from the First Part of the Fourth LIGO-Virgo-KAGRA Observing Run",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, A Adam, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2603.14168, 2026",
-    "citedBy": 5,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:YOwf2qJgpHMC",
-    "arxivId": "2603.14168"
-  },
-  {
-    "title": "Searches for Continuous Gravitational Waves from Supernova Remnants in the first part of the LIGO-Virgo-KAGRA Fourth Observing run",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "The Astrophysical Journal 1004 (2), 204, 2026",
-    "citedBy": 4,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:QIV2ME_5wuYC"
-  },
-  {
-    "title": "Search for planetary-mass ultracompact binaries using data from the first part of the LIGO–Virgo–KAGRA fourth observing run",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "Physical Review D 114 (2), 022005, 2026",
-    "citedBy": 2,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:hqOjcs7Dif8C"
-  },
-  {
-    "title": "Open Data from LIGO, Virgo, and KAGRA through the Second Part of the Fourth Observing Run",
-    "authors": "AG Abac, A Abe, I Abouelfettouh, F Acernese, K Ackley, A Adam, ...",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2605.27090, 2026",
-    "citedBy": 2,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:e5wmG9Sq2KIC",
-    "arxivId": "2605.27090"
-  },
-  {
-    "title": "Searches for Binary Mergers with Sub-solar Mass Components in Data from the First Part of LIGO--Virgo--KAGRA's Fourth Observing Run",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, A Adam, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2605.05444, 2026",
-    "citedBy": 2,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:ZeXyd9-uunAC",
-    "arxivId": "2605.05444"
-  },
-  {
-    "title": "Constraints on ultralight bosons from merging binary and remnant black holes observed during the second and third parts of the fourth LIGO-Virgo-KAGRA observing run",
-    "authors": "AG Abac, A Abe, I Abouelfettouh, F Acernese, K Ackley, A Adam, ...",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2608.11620, 2026",
-    "citedBy": 1,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:r0BpntZqJG4C",
-    "arxivId": "2608.11620"
-  },
-  {
-    "title": "Method to get Better Sky Maps in a GstLAL Low-Latency Analysis",
-    "authors": "P Joshi, B Ewing, C Hanna, Z Yarbrough, JDE Creighton, S Adhicary, ...",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2606.10076, 2026",
-    "citedBy": 1,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:HDshCWvjkbEC",
-    "arxivId": "2606.10076"
-  },
-  {
-    "title": "Deep search for joint sources of gravitational waves and high-energy neutrinos with IceCube during the third observing run of LIGO and Virgo",
-    "authors": "R Abbasi, M Ackermann, J Adams, SK Agarwalla, JA Aguilar, M Ahlers, ...",
-    "year": 2026,
-    "venue": "The Astrophysical Journal 1003 (1), 41, 2026",
-    "citedBy": 1,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:MXK_kJrjxJIC"
-  },
-  {
-    "title": "GstLAL O4 Online Results Paper",
-    "authors": "S Adhicary, P Baral, A Baylor, B Ewing, YJ Huang, R Huxford, P Joshi, ...",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2605.19153, 2026",
-    "citedBy": 1,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:hC7cP41nSMkC",
-    "arxivId": "2605.19153"
-  },
-  {
-    "title": "Updated Upper Limits on the Isotropic Gravitational-Wave Background from LIGO, Virgo, and KAGRA Data through April 2025",
-    "authors": "AG Abac, A Abe, I Abouelfettouh, F Acernese, K Ackley, A Adam, ...",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2608.23477, 2026",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:bEWYMUwI8FkC",
-    "arxivId": "2608.23477"
-  },
-  {
-    "title": "LIGO A",
-    "authors": "L Sun, K Kuns, BJJ Slagmolen, P Fritschel, P Schmidt, BT Lantz, ...",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2608.11673, 2026",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:iH-uZ7U-co4C",
-    "arxivId": "2608.11673"
-  },
-  {
-    "title": "GWTC-5.0: Tests of General Relativity",
-    "authors": "AG Abac, A Abe, I Abouelfettouh, F Acernese, K Ackley, A Adam, ...",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2607.19293, 2026",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:4JMBOYKVnBMC",
-    "arxivId": "2607.19293"
-  },
-  {
-    "title": "Sub-Torque-Balance Upper Limits on Continuous Gravitational Waves from Scorpius X-1",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, A Adam, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2607.07765, 2026",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:_Qo2XoVZTnwC",
-    "arxivId": "2607.07765"
-  },
-  {
-    "title": "Fast targeted gravitational-wave followup search for compact binary mergers using GSTLAL pipeline",
-    "authors": "L Tsukada, N Zhang, S Sachdev, S Adhicary, C Hanna, P Joshi, D Singh",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2606.22266, 2026",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:R3hNpaxXUhUC",
-    "arxivId": "2606.22266"
-  },
-  {
-    "title": "GW240925 and GW250207: Astrophysical Calibration of Gravitational-wave Detectors",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, A Adam, C Adamcewicz, ...",
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2605.11703, 2026",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:qUcmZB5y_30C",
-    "arxivId": "2605.11703"
-  },
-  {
-    "title": "arXiv: Searches for Binary Mergers with Sub-solar Mass Components in Data from the First Part of LIGO--Virgo--KAGRA's Fourth Observing Run",
-    "authors": "AG Abac, ML Chiofalo, C North, R Bhandare, G Pierra, A Amato, D Chen, ...",
-    "year": 2026,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:-f6ydRqryjwC"
-  },
-  {
-    "title": "arXiv: Narrowband searches for continuous gravitational waves from known pulsars in the first two parts of the fourth LIGO--Virgo--KAGRA observing run",
-    "authors": "AG Abac, ML Chiofalo, C North, R Bhandare, G Pierra, A Amato, D Chen, ...",
-    "year": 2026,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:L8Ckcad2t8MC"
-  },
-  {
-    "title": "Toward fast targeted gravitational-wave followup search for compact binary coalescences using GstLAL inspiral pipeline",
-    "authors": "N Zhang, L Tsukada, S Sachdev",
-    "year": 2026,
-    "venue": "APS Global Physics Summit 2026, 2026",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:mB3voiENLucC"
-  },
-  {
-    "title": "GWTC-4.0: Updating the gravitational-wave transient catalog with observations from the first part of the fourth LIGO-Virgo-KAGRA observing run",
-    "authors": "A Abac, I Abouelfettouh, F Acernese, K Ackley, S Adhicary, D Adhikari, ...",
-    "year": 2025,
-    "venue": "arXiv preprint arXiv:2508.18082, 2025",
-    "citedBy": 327,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:eQOLeE2rZwMC",
-    "arxivId": "2508.18082"
-  },
-  {
-    "title": "GW250114: Testing Hawking’s area law and the Kerr nature of black holes",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2025,
-    "venue": "Physical review letters 135 (11), 111403, 2025",
-    "citedBy": 271,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:2osOgNQ5qMEC"
-  },
-  {
-    "title": "GW231123: A Binary Black Hole Merger with Total Mass 190–265",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2025,
-    "venue": "The Astrophysical Journal Letters 993 (1), L25, 2025",
-    "citedBy": 208,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:u5HHmVD_uO8C"
-  },
-  {
-    "title": "GW241011 and GW241110: Exploring binary formation and fundamental physics with asymmetric, high-spin black hole coalescences",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2025,
-    "venue": "The Astrophysical Journal Letters 993 (1), L21, 2025",
-    "citedBy": 87,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:Se3iqnhoufwC"
-  },
-  {
-    "title": "Black hole spectroscopy and tests of general relativity with GW250114",
-    "authors": "LIGO Scientific Collaboration, Virgo Collaboration, KAGRA collaboration",
-    "year": 2025,
-    "venue": "arXiv preprint arXiv:2509.08099, 2025",
-    "citedBy": 47,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:KlAtU1dfN6UC",
-    "arxivId": "2509.08099"
-  },
-  {
-    "title": "All-sky search for short gravitational-wave bursts in the first part of the fourth LIGO-Virgo-KAGRA observing run",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2025,
-    "venue": "Physical review D 112 (10), 102005, 2025",
-    "citedBy": 30,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:W7OEmFMy1HYC"
-  },
-  {
-    "title": "Upper Limits on the Isotropic Gravitational-Wave Background from the first part of LIGO, Virgo, and KAGRA's fourth Observing Run",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2025,
-    "venue": "arXiv preprint arXiv:2508.20721, 2025",
-    "citedBy": 23,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:d1gkVwhDpl0C",
-    "arxivId": "2508.20721"
-  },
-  {
-    "title": "Cosmological and High Energy Physics implications from gravitational-wave background searches in LIGO-Virgo-KAGRA's O1-O4a runs",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2025,
-    "venue": "arXiv preprint arXiv:2510.26848, 2025",
-    "citedBy": 13,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:0EnyYjriUFMC",
-    "arxivId": "2510.26848"
-  },
-  {
-    "title": "Template bank for subsolar mass compact binary mergers in the fourth observing run of Advanced LIGO, Advanced Virgo, and KAGRA",
-    "authors": "C Hanna, J Kennington, W Niu, S Sakon, D Singh, S Adhicary, P Baral, ...",
-    "year": 2025,
-    "venue": "Physical Review D 112 (4), 044013, 2025",
-    "citedBy": 12,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:u-x6o8ySG0sC"
-  },
-  {
-    "title": "How Many Times Should We Matched Filter Gravitational Wave Data? A Comparison of GstLAL's Online and Offline Performance",
-    "authors": "P Joshi, W Niu, C Hanna, R Huxford, D Singh, L Tsukada, S Adhicary, ...",
-    "year": 2025,
-    "venue": "arXiv preprint arXiv:2505.23959, 2025",
-    "citedBy": 7,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:qjMakFHDy7sC",
-    "arxivId": "2505.23959"
-  },
-  {
-    "title": "Directed searches for gravitational waves from ultralight vector boson clouds around merger remnant and galactic black holes during the first part of the fourth LIGO-Virgo …",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2025,
-    "venue": "arXiv preprint arXiv:2509.07352, 2025",
-    "citedBy": 6,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:LkGwnXOMwfcC",
-    "arxivId": "2509.07352"
-  },
-  {
-    "title": "New methods for offline GstLAL analyses",
-    "authors": "P Joshi, L Tsukada, C Hanna, S Adhicary, D Mukherjee, W Niu, S Sakon, ...",
-    "year": 2025,
-    "venue": "arXiv preprint arXiv:2506.06497, 2025",
-    "citedBy": 5,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:IjCSPb-OGe4C",
-    "arxivId": "2506.06497"
-  },
-  {
-    "title": "All-sky search for continuous gravitational-wave signals from unknown neutron stars in binary systems in the first part of the fourth LIGO-Virgo-KAGRA observing run",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2025,
-    "venue": "arXiv preprint arXiv:2511.16863, 2025",
-    "citedBy": 3,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:8k81kl-MbHgC",
-    "arxivId": "2511.16863"
-  },
-  {
-    "title": "Direct multi-model dark-matter search with gravitational-wave interferometers using data from the first part of the fourth LIGO-Virgo-KAGRA observing run",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2025,
-    "venue": "arXiv preprint arXiv:2510.27022, 2025",
-    "citedBy": 2,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:5nxA0vEk-isC",
-    "arxivId": "2510.27022"
-  },
-  {
-    "title": "GWTC-4.0: Searches for Gravitational-Wave Lensing Signatures",
-    "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
-    "year": 2025,
-    "venue": "arXiv preprint arXiv:2512.16347, 2025",
-    "citedBy": 1,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:3fE2CSJIrl8C",
-    "arxivId": "2512.16347"
-  },
-  {
-    "title": "GW231109_235456: A Sub-threshold Binary Neutron Star Merger in the LIGO-Virgo-KAGRA O4a Observing Run?",
-    "authors": "W Niu, CJ Haster, JDE Creighton, C Hanna, S Adhicary, P Baral, A Baylor, ...",
-    "year": 2025,
-    "venue": "arXiv preprint arXiv:2509.09741, 2025",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:Y0pCki6q_DkC",
-    "arxivId": "2509.09741"
-  },
-  {
-    "title": "Targeted gravitational-wave search for compact binaries using a GstLAL pipeline: Towards medium-latency followup.",
-    "authors": "L Tsukada, S Sachdev, N Zhang",
-    "year": 2025,
-    "venue": "APS Global Physics Summit 2025, 2025",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:UebtZRa9Y70C"
-  },
-  {
-    "title": "GW250114: Testing Hawking’s Area Law and the Kerr Nature of Black Holes",
-    "authors": "J Janquart, L Scientific",
-    "year": 2025,
-    "venue": "Physical Review Letters 135, 2025",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:4DMP91E08xMC"
-  },
-  {
-    "title": "Dynamics, Statistics, and Task Allocation of Foraging Ants",
-    "authors": "EH Yong, N Zhang",
-    "year": 2024,
-    "venue": "APS March Meeting Abstracts 2024, N36. 010, 2024",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:9yKSN-GCB0IC"
-  },
-  {
-    "title": "Dynamics, statistics, and task allocation of foraging ants",
-    "authors": "N Zhang, EH Yong",
-    "year": 2023,
-    "venue": "Physical Review E 108 (5), 054306, 2023",
-    "citedBy": 6,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:zYLM7Y9cAGgC"
-  }
-]
+{
+  "source": "seed",
+  "syncedAt": "2026-09-09T06:43:24.398Z",
+  "publications": [
+    {
+      "title": "Black hole spectroscopy and tests of general relativity with GW250114",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "Physical Review Letters 136 (4), 041403, 2026",
+      "citedBy": 106,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:j3f4tGmQtD8C"
+    },
+    {
+      "title": "GWTC-4.0: constraints on the cosmic expansion rate and modified gravitational-wave propagation",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "The Astrophysical Journal Letters 1007 (1), L17, 2026",
+      "citedBy": 38,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:_FxGoFyzp5QC"
+    },
+    {
+      "title": "Open data from LIGO, Virgo, and KAGRA through the first part of the fourth observing run",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "The Astrophysical Journal 1004 (2), 232, 2026",
+      "citedBy": 35,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:YsMSGLbcyi4C"
+    },
+    {
+      "title": "GWTC-4.0: Tests of General Relativity. I. Overview and General Tests",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2603.19019, 2026",
+      "citedBy": 23,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:M3ejUd6NZC8C",
+      "arxivId": "2603.19019"
+    },
+    {
+      "title": "GWTC-5.0: Observations from the Second Part of the Fourth LIGO-Virgo-KAGRA Observing Run and Updates to the Gravitational-Wave Transient Catalog",
+      "authors": "AG Abac, A Abe, I Abouelfettouh, F Acernese, K Ackley, A Adam, ...",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2605.27225, 2026",
+      "citedBy": 18,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:RHpTSmoSYBkC",
+      "arxivId": "2605.27225"
+    },
+    {
+      "title": "GWTC-4.0: Tests of general relativity. II. Parameterized tests",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2603.19020, 2026",
+      "citedBy": 13,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:4TOpqqG69KYC",
+      "arxivId": "2603.19020"
+    },
+    {
+      "title": "GWTC-4.0: Tests of General Relativity. III. Tests of the Remnants",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2603.19021, 2026",
+      "citedBy": 12,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:qxL8FJ1GzNcC",
+      "arxivId": "2603.19021"
+    },
+    {
+      "title": "All-sky search for long-duration gravitational-wave transients in the first part of the fourth LIGO-Virgo-KAGRA observing run",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "Physical Review D 113 (8), 082004, 2026",
+      "citedBy": 11,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:UeHWp8X0CEIC"
+    },
+    {
+      "title": "GW230814: investigation of a loud gravitational-wave signal observed with a single detector",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "The Astrophysical Journal Letters 1004 (2), L23, 2026",
+      "citedBy": 10,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:TQgYirikUcIC"
+    },
+    {
+      "title": "Directional search for persistent gravitational waves: Results from the first part of LIGO-Virgo-KAGRA’s fourth observing run",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "Physical Review D 114 (2), 022001, 2026",
+      "citedBy": 7,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:ufrVoPGSRksC"
+    },
+    {
+      "title": "Constraints on gravitational waves from the 2024 Vela pulsar glitch",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "The Astrophysical Journal 1005 (1), 12, 2026",
+      "citedBy": 6,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:kNdYIx-mwKoC"
+    },
+    {
+      "title": "Narrowband searches for continuous gravitational waves from known pulsars in the first two parts of the fourth LIGO–Virgo–KAGRA observing run",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, A Adam, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "The Astrophysical Journal 1005 (2), 221, 2026",
+      "citedBy": 5,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:9ZlFYXVOiuMC"
+    },
+    {
+      "title": "All-sky Searches for Continuous Gravitational Waves from Isolated Neutron Stars in the Data from the First Part of the Fourth LIGO-Virgo-KAGRA Observing Run",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, A Adam, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2603.14168, 2026",
+      "citedBy": 5,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:YOwf2qJgpHMC",
+      "arxivId": "2603.14168"
+    },
+    {
+      "title": "Searches for Continuous Gravitational Waves from Supernova Remnants in the first part of the LIGO-Virgo-KAGRA Fourth Observing run",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "The Astrophysical Journal 1004 (2), 204, 2026",
+      "citedBy": 4,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:QIV2ME_5wuYC"
+    },
+    {
+      "title": "Search for planetary-mass ultracompact binaries using data from the first part of the LIGO–Virgo–KAGRA fourth observing run",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "Physical Review D 114 (2), 022005, 2026",
+      "citedBy": 2,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:hqOjcs7Dif8C"
+    },
+    {
+      "title": "Open Data from LIGO, Virgo, and KAGRA through the Second Part of the Fourth Observing Run",
+      "authors": "AG Abac, A Abe, I Abouelfettouh, F Acernese, K Ackley, A Adam, ...",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2605.27090, 2026",
+      "citedBy": 2,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:e5wmG9Sq2KIC",
+      "arxivId": "2605.27090"
+    },
+    {
+      "title": "Searches for Binary Mergers with Sub-solar Mass Components in Data from the First Part of LIGO--Virgo--KAGRA's Fourth Observing Run",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, A Adam, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2605.05444, 2026",
+      "citedBy": 2,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:ZeXyd9-uunAC",
+      "arxivId": "2605.05444"
+    },
+    {
+      "title": "Constraints on ultralight bosons from merging binary and remnant black holes observed during the second and third parts of the fourth LIGO-Virgo-KAGRA observing run",
+      "authors": "AG Abac, A Abe, I Abouelfettouh, F Acernese, K Ackley, A Adam, ...",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2608.11620, 2026",
+      "citedBy": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:r0BpntZqJG4C",
+      "arxivId": "2608.11620"
+    },
+    {
+      "title": "Method to get Better Sky Maps in a GstLAL Low-Latency Analysis",
+      "authors": "P Joshi, B Ewing, C Hanna, Z Yarbrough, JDE Creighton, S Adhicary, ...",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2606.10076, 2026",
+      "citedBy": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:HDshCWvjkbEC",
+      "arxivId": "2606.10076"
+    },
+    {
+      "title": "Deep search for joint sources of gravitational waves and high-energy neutrinos with IceCube during the third observing run of LIGO and Virgo",
+      "authors": "R Abbasi, M Ackermann, J Adams, SK Agarwalla, JA Aguilar, M Ahlers, ...",
+      "year": 2026,
+      "venue": "The Astrophysical Journal 1003 (1), 41, 2026",
+      "citedBy": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:MXK_kJrjxJIC"
+    },
+    {
+      "title": "GstLAL O4 Online Results Paper",
+      "authors": "S Adhicary, P Baral, A Baylor, B Ewing, YJ Huang, R Huxford, P Joshi, ...",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2605.19153, 2026",
+      "citedBy": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:hC7cP41nSMkC",
+      "arxivId": "2605.19153"
+    },
+    {
+      "title": "Updated Upper Limits on the Isotropic Gravitational-Wave Background from LIGO, Virgo, and KAGRA Data through April 2025",
+      "authors": "AG Abac, A Abe, I Abouelfettouh, F Acernese, K Ackley, A Adam, ...",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2608.23477, 2026",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:bEWYMUwI8FkC",
+      "arxivId": "2608.23477"
+    },
+    {
+      "title": "LIGO A",
+      "authors": "L Sun, K Kuns, BJJ Slagmolen, P Fritschel, P Schmidt, BT Lantz, ...",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2608.11673, 2026",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:iH-uZ7U-co4C",
+      "arxivId": "2608.11673"
+    },
+    {
+      "title": "GWTC-5.0: Tests of General Relativity",
+      "authors": "AG Abac, A Abe, I Abouelfettouh, F Acernese, K Ackley, A Adam, ...",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2607.19293, 2026",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:4JMBOYKVnBMC",
+      "arxivId": "2607.19293"
+    },
+    {
+      "title": "Sub-Torque-Balance Upper Limits on Continuous Gravitational Waves from Scorpius X-1",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, A Adam, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2607.07765, 2026",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:_Qo2XoVZTnwC",
+      "arxivId": "2607.07765"
+    },
+    {
+      "title": "Fast targeted gravitational-wave followup search for compact binary mergers using GSTLAL pipeline",
+      "authors": "L Tsukada, N Zhang, S Sachdev, S Adhicary, C Hanna, P Joshi, D Singh",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2606.22266, 2026",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:R3hNpaxXUhUC",
+      "arxivId": "2606.22266"
+    },
+    {
+      "title": "GW240925 and GW250207: Astrophysical Calibration of Gravitational-wave Detectors",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, A Adam, C Adamcewicz, ...",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2605.11703, 2026",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:qUcmZB5y_30C",
+      "arxivId": "2605.11703"
+    },
+    {
+      "title": "arXiv: Searches for Binary Mergers with Sub-solar Mass Components in Data from the First Part of LIGO--Virgo--KAGRA's Fourth Observing Run",
+      "authors": "AG Abac, ML Chiofalo, C North, R Bhandare, G Pierra, A Amato, D Chen, ...",
+      "year": 2026,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:-f6ydRqryjwC"
+    },
+    {
+      "title": "arXiv: Narrowband searches for continuous gravitational waves from known pulsars in the first two parts of the fourth LIGO--Virgo--KAGRA observing run",
+      "authors": "AG Abac, ML Chiofalo, C North, R Bhandare, G Pierra, A Amato, D Chen, ...",
+      "year": 2026,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:L8Ckcad2t8MC"
+    },
+    {
+      "title": "Toward fast targeted gravitational-wave followup search for compact binary coalescences using GstLAL inspiral pipeline",
+      "authors": "N Zhang, L Tsukada, S Sachdev",
+      "year": 2026,
+      "venue": "APS Global Physics Summit 2026, 2026",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:mB3voiENLucC"
+    },
+    {
+      "title": "GWTC-4.0: Updating the gravitational-wave transient catalog with observations from the first part of the fourth LIGO-Virgo-KAGRA observing run",
+      "authors": "A Abac, I Abouelfettouh, F Acernese, K Ackley, S Adhicary, D Adhikari, ...",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2508.18082, 2025",
+      "citedBy": 327,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:eQOLeE2rZwMC",
+      "arxivId": "2508.18082"
+    },
+    {
+      "title": "GW250114: Testing Hawking’s area law and the Kerr nature of black holes",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2025,
+      "venue": "Physical review letters 135 (11), 111403, 2025",
+      "citedBy": 271,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:2osOgNQ5qMEC"
+    },
+    {
+      "title": "GW231123: A Binary Black Hole Merger with Total Mass 190–265",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2025,
+      "venue": "The Astrophysical Journal Letters 993 (1), L25, 2025",
+      "citedBy": 208,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:u5HHmVD_uO8C"
+    },
+    {
+      "title": "GW241011 and GW241110: Exploring binary formation and fundamental physics with asymmetric, high-spin black hole coalescences",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2025,
+      "venue": "The Astrophysical Journal Letters 993 (1), L21, 2025",
+      "citedBy": 87,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:Se3iqnhoufwC"
+    },
+    {
+      "title": "Black hole spectroscopy and tests of general relativity with GW250114",
+      "authors": "LIGO Scientific Collaboration, Virgo Collaboration, KAGRA collaboration",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2509.08099, 2025",
+      "citedBy": 47,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:KlAtU1dfN6UC",
+      "arxivId": "2509.08099"
+    },
+    {
+      "title": "All-sky search for short gravitational-wave bursts in the first part of the fourth LIGO-Virgo-KAGRA observing run",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2025,
+      "venue": "Physical review D 112 (10), 102005, 2025",
+      "citedBy": 30,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:W7OEmFMy1HYC"
+    },
+    {
+      "title": "Upper Limits on the Isotropic Gravitational-Wave Background from the first part of LIGO, Virgo, and KAGRA's fourth Observing Run",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2508.20721, 2025",
+      "citedBy": 23,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:d1gkVwhDpl0C",
+      "arxivId": "2508.20721"
+    },
+    {
+      "title": "Cosmological and High Energy Physics implications from gravitational-wave background searches in LIGO-Virgo-KAGRA's O1-O4a runs",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2510.26848, 2025",
+      "citedBy": 13,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:0EnyYjriUFMC",
+      "arxivId": "2510.26848"
+    },
+    {
+      "title": "Template bank for subsolar mass compact binary mergers in the fourth observing run of Advanced LIGO, Advanced Virgo, and KAGRA",
+      "authors": "C Hanna, J Kennington, W Niu, S Sakon, D Singh, S Adhicary, P Baral, ...",
+      "year": 2025,
+      "venue": "Physical Review D 112 (4), 044013, 2025",
+      "citedBy": 12,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:u-x6o8ySG0sC"
+    },
+    {
+      "title": "How Many Times Should We Matched Filter Gravitational Wave Data? A Comparison of GstLAL's Online and Offline Performance",
+      "authors": "P Joshi, W Niu, C Hanna, R Huxford, D Singh, L Tsukada, S Adhicary, ...",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2505.23959, 2025",
+      "citedBy": 7,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:qjMakFHDy7sC",
+      "arxivId": "2505.23959"
+    },
+    {
+      "title": "Directed searches for gravitational waves from ultralight vector boson clouds around merger remnant and galactic black holes during the first part of the fourth LIGO-Virgo …",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2509.07352, 2025",
+      "citedBy": 6,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:LkGwnXOMwfcC",
+      "arxivId": "2509.07352"
+    },
+    {
+      "title": "New methods for offline GstLAL analyses",
+      "authors": "P Joshi, L Tsukada, C Hanna, S Adhicary, D Mukherjee, W Niu, S Sakon, ...",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2506.06497, 2025",
+      "citedBy": 5,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:IjCSPb-OGe4C",
+      "arxivId": "2506.06497"
+    },
+    {
+      "title": "All-sky search for continuous gravitational-wave signals from unknown neutron stars in binary systems in the first part of the fourth LIGO-Virgo-KAGRA observing run",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2511.16863, 2025",
+      "citedBy": 3,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:8k81kl-MbHgC",
+      "arxivId": "2511.16863"
+    },
+    {
+      "title": "Direct multi-model dark-matter search with gravitational-wave interferometers using data from the first part of the fourth LIGO-Virgo-KAGRA observing run",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2510.27022, 2025",
+      "citedBy": 2,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:5nxA0vEk-isC",
+      "arxivId": "2510.27022"
+    },
+    {
+      "title": "GWTC-4.0: Searches for Gravitational-Wave Lensing Signatures",
+      "authors": "AG Abac, I Abouelfettouh, F Acernese, K Ackley, C Adamcewicz, ...",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2512.16347, 2025",
+      "citedBy": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:3fE2CSJIrl8C",
+      "arxivId": "2512.16347"
+    },
+    {
+      "title": "GW231109_235456: A Sub-threshold Binary Neutron Star Merger in the LIGO-Virgo-KAGRA O4a Observing Run?",
+      "authors": "W Niu, CJ Haster, JDE Creighton, C Hanna, S Adhicary, P Baral, A Baylor, ...",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2509.09741, 2025",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:Y0pCki6q_DkC",
+      "arxivId": "2509.09741"
+    },
+    {
+      "title": "Targeted gravitational-wave search for compact binaries using a GstLAL pipeline: Towards medium-latency followup.",
+      "authors": "L Tsukada, S Sachdev, N Zhang",
+      "year": 2025,
+      "venue": "APS Global Physics Summit 2025, 2025",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:UebtZRa9Y70C"
+    },
+    {
+      "title": "GW250114: Testing Hawking’s Area Law and the Kerr Nature of Black Holes",
+      "authors": "J Janquart, L Scientific",
+      "year": 2025,
+      "venue": "Physical Review Letters 135, 2025",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:4DMP91E08xMC"
+    },
+    {
+      "title": "Dynamics, Statistics, and Task Allocation of Foraging Ants",
+      "authors": "EH Yong, N Zhang",
+      "year": 2024,
+      "venue": "APS March Meeting Abstracts 2024, N36. 010, 2024",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:9yKSN-GCB0IC"
+    },
+    {
+      "title": "Dynamics, statistics, and task allocation of foraging ants",
+      "authors": "N Zhang, EH Yong",
+      "year": 2023,
+      "venue": "Physical Review E 108 (5), 054306, 2023",
+      "citedBy": 6,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xOrW2S8AAAAJ&pagesize=100&citation_for_view=xOrW2S8AAAAJ:zYLM7Y9cAGgC"
+    }
+  ]
+}

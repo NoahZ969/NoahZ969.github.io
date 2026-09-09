@@ -1,12 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { publications } from '../data/publications';
+import { publications, syncedAt } from '../data/publications';
 import { site } from '../data/site';
 
 const sorted = [...publications].sort(
   (a, b) => (b.year ?? 0) - (a.year ?? 0) || (b.citedBy ?? 0) - (a.citedBy ?? 0)
 );
 const scholarUrl = site.links.find((l) => l.label === 'Google Scholar')?.url;
+const synced = new Date(syncedAt);
+const syncedEn = synced.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+const syncedZh = `${synced.getUTCFullYear()} 年 ${synced.getUTCMonth() + 1} 月 ${synced.getUTCDate()} 日`;
 ---
 
 <BaseLayout title="Publications" bgImage="/bg/publication.jpeg">
@@ -31,11 +34,13 @@ const scholarUrl = site.links.find((l) => l.label === 'Google Scholar')?.url;
       <p class="role">
         <span data-lang="en">
           {sorted.length} entries, synced automatically from
-          <a href={scholarUrl} target="_blank" rel="noopener">Google Scholar</a>.
+          <a href={scholarUrl} target="_blank" rel="noopener">Google Scholar</a>
+          &middot; last updated {syncedEn}.
         </span>
         <span data-lang="zh">
           共 {sorted.length} 篇，自动同步自
-          <a href={scholarUrl} target="_blank" rel="noopener">Google Scholar</a>。
+          <a href={scholarUrl} target="_blank" rel="noopener">Google Scholar</a>
+          &middot; 最后更新于 {syncedZh}。
         </span>
       </p>
 
