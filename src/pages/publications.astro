@@ -1,11 +1,22 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { publications, syncedAt } from '../data/publications';
+import { featured, findFeatured } from '../data/featured';
 import { site } from '../data/site';
 
 const sorted = [...publications].sort(
   (a, b) => (b.year ?? 0) - (a.year ?? 0) || (b.citedBy ?? 0) - (a.citedBy ?? 0)
 );
+
+const selected = featured
+  .map((f) => {
+    const pub = sorted.find((p) => findFeatured(p) === f);
+    return pub && { ...pub, doi: pub.doi ?? f.doi, role: f.role };
+  })
+  .filter((entry) => entry !== undefined);
+
+const rest = sorted.filter((p) => !findFeatured(p));
+
 const scholarUrl = site.links.find((l) => l.label === 'Google Scholar')?.url;
 const synced = new Date(syncedAt);
 const syncedEn = synced.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
@@ -44,8 +55,52 @@ const syncedZh = `${synced.getUTCFullYear()} 年 ${synced.getUTCMonth() + 1} 月
         </span>
       </p>
 
+      {selected.length > 0 && (
+        <>
+          <h2>
+            <span data-lang="en">Selected work</span>
+            <span data-lang="zh">代表性成果</span>
+          </h2>
+          <ul class="pub-list featured">
+            {selected.map((pub) => (
+              <li>
+                <div class="title">{pub.title}</div>
+                <div class="meta">
+                  <span class="badge">
+                    <span data-lang="en">{pub.role.en}</span>
+                    <span data-lang="zh">{pub.role.zh}</span>
+                  </span>
+                </div>
+                <div class="meta">
+                  <span>{pub.authors}</span>
+                  {pub.venue
+                    ? <span> &middot; <em>{pub.venue}</em></span>
+                    : pub.year && <span> &middot; {pub.year}</span>}
+                </div>
+                <div class="meta">
+                  {pub.arxivId && <a href={`https://arxiv.org/abs/${pub.arxivId}`} target="_blank" rel="noopener">arXiv:{pub.arxivId}</a>}
+                  {pub.doi && <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noopener">doi:{pub.doi}</a>}
+                  {pub.url && <a href={pub.url} target="_blank" rel="noopener">Scholar</a>}
+                  {pub.citedBy && (
+                    <span>
+                      <span data-lang="en">Cited by {pub.citedBy}</span>
+                      <span data-lang="zh">被引 {pub.citedBy}</span>
+                    </span>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+
+          <h2>
+            <span data-lang="en">Other publications</span>
+            <span data-lang="zh">其他论文</span>
+          </h2>
+        </>
+      )}
+
       <ul class="pub-list">
-        {sorted.map((pub) => (
+        {rest.map((pub) => (
           <li>
             <div class="title">{pub.title}</div>
             <div class="meta">

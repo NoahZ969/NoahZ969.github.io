@@ -219,6 +219,26 @@ footer.site-footer .container {
   margin-right: 0.75rem;
 }
 
+.pub-list.featured li {
+  border-left: 3px solid var(--accent);
+  border-bottom: none;
+  padding-left: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-list.featured .title {
+  font-size: 1.05rem;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  padding: 0 0.4rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+
 .empty {
   color: var(--muted);
   font-style: italic;
