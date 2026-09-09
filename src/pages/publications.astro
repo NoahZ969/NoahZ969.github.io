@@ -1,8 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { publications } from '../data/publications';
+import { site } from '../data/site';
 
-const sorted = [...publications].sort((a, b) => b.year - a.year);
+const sorted = [...publications].sort(
+  (a, b) => (b.year ?? 0) - (a.year ?? 0) || (b.citedBy ?? 0) - (a.citedBy ?? 0)
+);
+const scholarUrl = site.links.find((l) => l.label === 'Google Scholar')?.url;
 ---
 
 <BaseLayout title="Publications" bgImage="/bg/publication.jpeg">
@@ -14,32 +18,52 @@ const sorted = [...publications].sort((a, b) => b.year - a.year);
   {sorted.length === 0 ? (
     <>
       <p class="empty" data-lang="en">
-        Publication list will appear here. Add entries to <code>src/data/publications.ts</code> for now;
-        once the INSPIRE-HEP profile is approved, this page will auto-update from the API.
+        Publication list will appear here once <code>npm run fetch-publications</code> has run
+        with a <code>SERPAPI_KEY</code> available.
       </p>
       <p class="empty" data-lang="zh">
-        论文列表将在此显示。目前可在 <code>src/data/publications.ts</code> 中手动添加条目；
-        INSPIRE-HEP 个人主页通过审核后，此页将通过 API 自动更新。
+        在配置 <code>SERPAPI_KEY</code> 并运行 <code>npm run fetch-publications</code> 后，
+        论文列表将在此显示。
       </p>
     </>
   ) : (
-    <ul class="pub-list">
-      {sorted.map((pub) => (
-        <li>
-          <div class="title">{pub.title}</div>
-          <div class="meta">
-            <span>{pub.authors}</span>
-            {pub.venue && <span> &middot; <em>{pub.venue}</em></span>}
-            <span> &middot; {pub.year}</span>
-          </div>
-          <div class="meta">
-            {pub.arxivId && <a href={`https://arxiv.org/abs/${pub.arxivId}`} target="_blank" rel="noopener">arXiv:{pub.arxivId}</a>}
-            {pub.doi && <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noopener">doi:{pub.doi}</a>}
-            {pub.dccId && <a href={`https://dcc.ligo.org/${pub.dccId}`} target="_blank" rel="noopener">DCC:{pub.dccId}</a>}
-            {pub.url && <a href={pub.url} target="_blank" rel="noopener">Link</a>}
-          </div>
-        </li>
-      ))}
-    </ul>
+    <>
+      <p class="role">
+        <span data-lang="en">
+          {sorted.length} entries, synced automatically from
+          <a href={scholarUrl} target="_blank" rel="noopener">Google Scholar</a>.
+        </span>
+        <span data-lang="zh">
+          共 {sorted.length} 篇，自动同步自
+          <a href={scholarUrl} target="_blank" rel="noopener">Google Scholar</a>。
+        </span>
+      </p>
+
+      <ul class="pub-list">
+        {sorted.map((pub) => (
+          <li>
+            <div class="title">{pub.title}</div>
+            <div class="meta">
+              <span>{pub.authors}</span>
+              {pub.venue
+                ? <span> &middot; <em>{pub.venue}</em></span>
+                : pub.year && <span> &middot; {pub.year}</span>}
+            </div>
+            <div class="meta">
+              {pub.arxivId && <a href={`https://arxiv.org/abs/${pub.arxivId}`} target="_blank" rel="noopener">arXiv:{pub.arxivId}</a>}
+              {pub.doi && <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noopener">doi:{pub.doi}</a>}
+              {pub.dccId && <a href={`https://dcc.ligo.org/${pub.dccId}`} target="_blank" rel="noopener">DCC:{pub.dccId}</a>}
+              {pub.url && <a href={pub.url} target="_blank" rel="noopener">Scholar</a>}
+              {pub.citedBy && (
+                <span>
+                  <span data-lang="en">Cited by {pub.citedBy}</span>
+                  <span data-lang="zh">被引 {pub.citedBy}</span>
+                </span>
+              )}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </>
   )}
 </BaseLayout>
