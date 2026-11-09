@@ -122,6 +122,23 @@ nav.site-nav ul {
   padding: 0;
 }
 
+nav.site-nav a { white-space: nowrap; }
+
+@media (max-width: 760px) {
+  nav.site-nav .container,
+  nav.site-nav .nav-right {
+    flex-wrap: wrap;
+  }
+  nav.site-nav .nav-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  nav.site-nav ul {
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+  }
+}
+
 html[lang="en"] [data-lang="zh"] { display: none; }
 html[lang="zh"] [data-lang="en"] { display: none; }
 

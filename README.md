@@ -7,8 +7,8 @@ Live site: https://noahz969.github.io
 ## Features
 
 - Bilingual (English / Simplified Chinese) content and UI toggle
-- Pages for home, research, publications, quant work, and CV
-- Downloadable CV in both English and Chinese
+- Pages for home, research, publications, quant & data science projects, and CV
+- Downloadable one-page resumes: quant and data science (English) and quant (Chinese)
 - Automatic build and deploy to GitHub Pages, plus a nightly rebuild
 
 ## Project structure
@@ -33,11 +33,9 @@ npm run build       # build to ./dist
 npm run preview     # preview the production build
 ```
 
-Regenerate the Chinese CV PDF from `scripts/cv-zh.html`:
+The downloadable resumes in `public/` are copied in from the one-page resumes kept outside this repo: `cv.pdf` (quant), `cv-ds.pdf` (data science) and `cv-zh.pdf` (Chinese, quant). Replace a file to update it.
 
-```bash
-npm run build-cv-zh
-```
+`scripts/cv-zh.html` is an older Chinese CV template; `npm run build-cv-zh` would overwrite `public/cv-zh.pdf` with it.
 
 ## Editing content
 

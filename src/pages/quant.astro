@@ -3,35 +3,59 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-  title="Quant"
-  description="Quantitative research projects: cross-sectional alpha research on WorldQuant BRAIN, Kalman-filtered high-frequency market microstructure, and a pre-registered equity momentum pipeline."
+  title="Quant & Data Science"
+  description="Quantitative finance and data science projects: a pre-registered CRSP equity momentum pipeline, walk-forward return prediction tested against an empirical null, cross-sectional alpha research on WorldQuant BRAIN, and a Kalman filter for market microstructure noise."
   bgImage="/bg/quant.jpeg"
 >
   <div data-lang="en">
-    <h1>Quantitative Trading</h1>
+    <h1>Quant &amp; Data Science</h1>
     <p>
-      Side projects applying signal-processing and statistical methods from physics to
-      financial markets. Interactive plots will land on individual project pages here as
-      they're ready.
+      Side projects applying the signal-processing, statistical inference, and validation
+      methods from my physics research to financial and time-series data. Each one asks the same question a gravitational-wave search does:
+      is this signal real, or did my process manufacture it?
     </p>
 
     <div class="card-stack">
       <article class="project-card">
         <h3>Cross-Sectional Equity Momentum Pipeline</h3>
         <p class="role">
-          Python &middot; S&amp;P 500 &middot; Apr 2026 &ndash; Present &middot;
+          Python &middot; CRSP/WRDS &middot; Apr 2026 &ndash; May 2026 &middot;
           <a href="https://github.com/NoahZ969/momentum-pipeline" target="_blank" rel="noopener">GitHub</a>
         </p>
         <p>
-          An end-to-end quantitative research pipeline, validated by reproducing the
-          well-documented 12&ndash;1 cross-sectional momentum anomaly (Jegadeesh &amp;
-          Titman 1993; Asness, Moskowitz &amp; Pedersen 2013). Built around a
-          pre-registered analysis plan: point-in-time S&amp;P 500 membership to
-          eliminate survivorship bias, in-sample 2005&ndash;2019 with a frozen
-          2020&ndash;2025 holdout, and pre-committed interpretation buckets for the
-          resulting Sharpe. The goal is a measurement apparatus I can trust &mdash;
-          once validated, the pipeline becomes the substrate for evaluating novel
-          hypotheses with calibrated confidence.
+          An end-to-end equity research pipeline, validated by reproducing the 12&ndash;1
+          cross-sectional momentum anomaly (Jegadeesh &amp; Titman 1993). The analysis plan
+          (hypothesis, universe, signal, costs, and pre-committed interpretation buckets) was
+          committed to git before any data was downloaded. The universe is a point-in-time
+          S&amp;P 500 rebuilt on CRSP to remove survivorship bias; delisting returns are
+          included; costs are 2.5&nbsp;bp per dollar traded; and the 2020&ndash;2024 holdout
+          was evaluated exactly once. The long-short decile portfolio correlates
+          <strong>0.90 in-sample</strong> (2005&ndash;2019) and <strong>0.83 out-of-sample</strong>
+          with the Ken French UMD factor, the pre-registered validation test. Net Sharpe is
+          slightly negative in both periods, as UMD&rsquo;s is over the same years, because
+          the window contains the 2009 momentum crash; the one post-hoc change to the plan is
+          dated and logged in the README. The validated pipeline is now the harness for
+          testing new signals.
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h3>Walk-Forward Return Prediction with an Empirical Null</h3>
+        <p class="role">Python &middot; Ridge Regression &middot; Sep 2026</p>
+        <p>
+          A deliberately small pipeline for practising validation properly. A ridge regression
+          on three stationary price features (20-day return, 20-day realized volatility, and
+          price relative to its 20-day mean) predicts next-day SPY returns. It is trained on an
+          expanding walk-forward window, purged at each train/test boundary, with train-only
+          standardization, and the features and
+          <code>&lambda;</code> were fixed before any result was seen. Mean out-of-sample IC over
+          2020&ndash;2024 is <strong>0.088</strong> (rank IC 0.090), with stable coefficient
+          signs across all five test years. Because daily returns are fat-tailed and
+          autocorrelated, significance comes from an empirical null instead of a textbook one:
+          block-permuting the labels in 20-day blocks and rerunning the whole pipeline 200 times
+          gives a null centred at zero with standard deviation 0.028, putting the observed IC
+          <strong>3.2&sigma; above it</strong> (<code>p &lt; 0.005</code>). That shows the IC
+          is real, not that it is tradeable after daily turnover costs.
         </p>
       </article>
 
@@ -56,16 +80,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </article>
 
       <article class="project-card">
-        <h3>High-Frequency Market Microstructure Signal Extraction</h3>
-        <p class="role">Python &middot; Kalman Filter &middot; MLE &middot; Aug 2025 &ndash; Feb 2026</p>
+        <h3>Kalman Filter for Market Microstructure Noise</h3>
+        <p class="role">
+          Python &middot; State-Space Model &middot; MLE &middot; Jan 2026, rebuilt Oct 2026 &middot;
+          <a href="https://github.com/NoahZ969/kalman-microstructure-filter" target="_blank" rel="noopener">GitHub</a>
+        </p>
         <p>
-          A Kalman filter that separates the efficient price signal from microstructure
-          noise (bid-ask bounce) in high-frequency Bitcoin tick data, modeling price as
-          a random walk with mean-reverting error. Process and measurement noise matrices
-          (Q and R) are calibrated by MLE; anchoring measurement noise to empirical
-          tick-size volatility resolves regime-switching overfitting. Benchmarked against
-          the EM algorithm (<code>pykalman</code>), with superior signal retention in
-          high-volatility regimes.
+          A local-level state-space model that separates the efficient price from
+          microstructure noise in BTC/USDT 1-minute closes: the efficient log-price follows a
+          random walk with process variance <code>Q</code>, and each observed price adds white
+          measurement noise with variance <code>R</code>. Estimating both by exact Gaussian
+          maximum likelihood gives <code>Q/R = 16.5</code> and a steady-state Kalman gain of
+          0.95, so about 11% of 1-minute return variance is microstructure noise. Filtering
+          removes the bid-ask-bounce signature (lag-1 return autocorrelation &minus;0.059 &rarr;
+          &asymp;&nbsp;0) with no lag, against about 4 minutes for a 10-period moving average, and
+          a Monte Carlo study on 300 synthetic series confirms the MLE is unbiased. Rebuilding an
+          earlier prototype also corrected its conclusion: the gap between the MLE and EM
+          (<code>pykalman</code>) estimates came from EM not converging &mdash; it matches the MLE
+          only after about 300 iterations &mdash; not from the MLE overfitting, and the
+          prototype&rsquo;s fix of anchoring <code>R</code> to tick-size volatility cost 65 nats
+          of log-likelihood and introduced lag. Still open: innovations fail a Ljung&ndash;Box
+          test and the noise is heteroskedastic, so rolling MLE, tick data, and Student-t noise
+          are next.
         </p>
       </article>
     </div>
@@ -74,27 +110,42 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </div>
 
   <div data-lang="zh">
-    <h1>量化交易</h1>
+    <h1>量化与数据科学</h1>
     <p>
-      将物理学中的信号处理与统计方法应用于金融市场的业余项目。未来的交互式可视化
-      将作为独立的项目子页面在此呈现。
+      将物理研究中的信号处理、统计推断与验证方法应用于金融和时间序列数据的业余项目。每个项目都在回答引力波搜索中的同一个问题：
+      这个信号是真实的，还是我的分析流程制造出来的？
     </p>
 
     <div class="card-stack">
       <article class="project-card">
-        <h3>股票截面动量策略流水线</h3>
+        <h3>截面股票动量研究管线</h3>
         <p class="role">
-          Python &middot; S&amp;P 500 &middot; 2026 年 4 月 &ndash; 至今 &middot;
+          Python &middot; CRSP/WRDS &middot; 2026 年 4 月 &ndash; 2026 年 5 月 &middot;
           <a href="https://github.com/NoahZ969/momentum-pipeline" target="_blank" rel="noopener">GitHub</a>
         </p>
         <p>
-          一套端到端的量化研究流水线，通过复现广泛验证过的 12&ndash;1 截面动量异象
-          （Jegadeesh &amp; Titman 1993；Asness, Moskowitz &amp; Pedersen 2013）来验证其可靠性。
-          整个项目围绕预注册（pre-registered）的分析方案构建：采用按时间点的 S&amp;P 500
-          成分股以消除幸存者偏差；样本内为 2005&ndash;2019 年，2020&ndash;2025 年作为冻结的
-          样本外检验区间；并预先约定夏普比率结果的解读区间。目标不是策略本身的盈利能力，
-          而是建立一套可信赖的测量装置 &mdash; 一旦验证通过，这条流水线将成为之后评估
-          新假设时具备校准置信度的基础设施。
+          一套端到端的股票研究管线，通过复现 12&ndash;1 截面动量异象（Jegadeesh &amp; Titman 1993）
+          来验证其可靠性。分析方案（假设、股票池、信号、成本与预先约定的结果解读区间）在下载任何数据之前
+          就已提交到 git。股票池为基于 CRSP 重建的按时间点 S&amp;P 500 成分股，以消除幸存者偏差；计入退市收益；
+          交易成本按每交易一美元 2.5&nbsp;bp 计；2020&ndash;2024 年样本外区间只评估了一次。多空十分位组合与
+          Ken French UMD 因子的相关性在样本内（2005&ndash;2019）为 <strong>0.90</strong>，样本外为
+          <strong>0.83</strong>，这正是预注册的验证标准。两个区间的净夏普比率均略为负值，与同期 UMD 一致，
+          原因是样本包含 2009 年的动量崩溃；对方案唯一的一次事后修改已注明日期并记录在 README 中。
+          验证通过的管线现在作为检验新信号的基础框架。
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h3>滚动前推收益预测与经验零分布检验</h3>
+        <p class="role">Python &middot; 岭回归 &middot; 2026 年 9 月</p>
+        <p>
+          一个刻意保持精简、用于练习严格验证的流水线。岭回归以三个平稳的价格特征（20 日收益率、20 日已实现波动率、
+          价格相对其 20 日均值的比率）预测 SPY 次日收益，采用扩展窗口的滚动前推（walk-forward）训练，并在每个训练/检验边界做 purge，标准化参数只用
+          训练集估计，特征与 <code>&lambda;</code> 在看到任何结果之前即已固定。2020&ndash;2024 年的平均样本外 IC 为
+          <strong>0.088</strong>（秩 IC 0.090），五个检验年份的系数符号保持一致。由于日收益具有厚尾和自相关，
+          显著性来自经验零分布而非教科书公式：以 20 日为块对标签做块置换，并将整条流水线重跑 200 次，得到的零分布
+          以 0 为中心、标准差 0.028，观测 IC 位于其上方 <strong>3.2&sigma;</strong>（<code>p &lt; 0.005</code>）。
+          这说明 IC 是真实的，但不代表扣除每日换手成本后仍可交易。
         </p>
       </article>
 
@@ -114,14 +165,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </article>
 
       <article class="project-card">
-        <h3>高频市场微观结构信号提取</h3>
-        <p class="role">Python &middot; 卡尔曼滤波 &middot; 极大似然估计 &middot; 2025 年 8 月 &ndash; 2026 年 2 月</p>
+        <h3>市场微观结构噪声的卡尔曼滤波</h3>
+        <p class="role">
+          Python &middot; 状态空间模型 &middot; 极大似然估计 &middot; 2026 年 1 月，2026 年 10 月重建 &middot;
+          <a href="https://github.com/NoahZ969/kalman-microstructure-filter" target="_blank" rel="noopener">GitHub</a>
+        </p>
         <p>
-          针对高频比特币逐笔数据构建卡尔曼滤波器，将有效价格信号与微观结构噪声
-          （买卖价差跳动）分离，把价格建模为带均值回复误差项的随机游走。通过极大似然估计
-          （MLE）校准过程噪声与测量噪声矩阵（Q, R）；将测量噪声锚定于经验上的最小变动单位
-          波动率，解决了状态切换带来的过拟合问题。与 EM 算法（<code>pykalman</code>）
-          进行了对比测试，在高波动区间表现出更优的信号保留能力。
+          用局部水平状态空间模型从 BTC/USDT 1 分钟收盘价中分离有效价格与微观结构噪声：有效对数价格服从过程方差为
+          <code>Q</code> 的随机游走，每个观测价格再叠加方差为 <code>R</code> 的白噪声。以精确高斯似然做极大似然估计，
+          得到 <code>Q/R = 16.5</code>，稳态卡尔曼增益 0.95，即 1 分钟收益方差中约 11% 来自微观结构噪声。滤波消除了
+          买卖价差跳动的特征（收益一阶自相关 &minus;0.059 &rarr; &asymp;&nbsp;0），且没有滞后，而 10 期移动平均约滞后
+          4 分钟；在 300 条模拟序列上的蒙特卡洛检验确认 MLE 无偏。重建早期原型时也修正了原来的结论：MLE 与 EM
+          （<code>pykalman</code>）估计不一致，原因是 EM 未收敛（约 300 次迭代后才与 MLE 一致），而不是 MLE 过拟合；
+          原型中将 <code>R</code> 锚定于最小变动单位波动率的做法，会损失 65 nats 的对数似然并引入滞后。尚待解决：
+          新息未通过 Ljung&ndash;Box 检验，且噪声存在异方差，下一步是滚动 MLE、逐笔数据和 Student-t 噪声。
         </p>
       </article>
     </div>

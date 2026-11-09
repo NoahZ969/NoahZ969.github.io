@@ -6,14 +6,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <div data-lang="en">
     <h1>CV</h1>
     <p>
-      <a href="/cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+      Download a one-page resume:
+      <a href="/cv.pdf" target="_blank" rel="noopener">Quant (PDF)</a> &middot;
+      <a href="/cv-ds.pdf" target="_blank" rel="noopener">Data Science (PDF)</a> &middot;
+      <a href="/cv-zh.pdf" target="_blank" rel="noopener">中文 &middot; Quant (PDF)</a>
     </p>
 
     <h2>Education</h2>
     <ul>
       <li>
         <strong>Ph.D. in Physics</strong>, Georgia Institute of Technology &mdash; Aug 2023 &ndash; Expected 2028<br />
-        Advisor: Surabhi Sachdev. Specialization: Gravitational-Wave Detection, GstLAL Pipeline, Low-Latency Signal Processing.
+        Advisor: Surabhi Sachdev. Focus: low-latency gravitational-wave signal processing and Bayesian statistical inference.
       </li>
       <li>
         <strong>M.S. in Computational Science and Engineering</strong>, Georgia Institute of Technology &mdash; Aug 2023 &ndash; May 2025<br />
@@ -25,125 +28,162 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </li>
     </ul>
 
-    <h2>Research &amp; Quantitative Experience</h2>
+    <h2>Research Experience</h2>
 
     <h3>Graduate Research Assistant &mdash; LIGO Scientific Collaboration</h3>
-    <p class="role">Georgia Institute of Technology &middot; Atlanta, GA &middot; Aug 2023 &ndash; Present</p>
+    <p class="role">Gravitational-Wave Detection &amp; Inference &middot; Georgia Institute of Technology &middot; Atlanta, GA &middot; Aug 2023 &ndash; Present</p>
     <ul>
-      <li><strong>Search Algorithm Optimization:</strong> Co-architected the &ldquo;Targeted Search&rdquo; method for GstLAL by integrating electromagnetic (EM) counterpart data as Bayesian priors. Improved signal-detection sensitivity by 30 orders of magnitude while maintaining the same latency profile.</li>
-      <li><strong>Statistical Validation:</strong> Conducted parameter-estimation (PE) review for the SGNL pipeline. Optimized statistical estimators, improving P-P plot (probability-probability) consistency and result reliability by 33%.</li>
-      <li><strong>Production Analysis:</strong> Contributed to the Intermediate-Mass Black Hole (IMBH) offline search for the GWTC-5 production run (data analysis, background statistics).</li>
-      <li><strong>Pipeline Engineering:</strong> Maintain the GstLAL hybrid C++/Python pipeline, processing terabytes of streaming data with sub-second latency for real-time trigger generation. Contributed to the Gravitational-Wave Transient Catalog (GWTC) study.</li>
+      <li><strong>Targeted Follow-up Search:</strong> Co-developed a targeted search for the GstLAL pipeline that folds external electromagnetic triggers (arrival time, sky location) into the likelihood-ratio detection ranking statistic as Bayesian priors, reducing the false-alarm rate of associated candidates by orders of magnitude at unchanged latency.</li>
+      <li><strong>Deployment:</strong> Used in the O4a observing run and being deployed for the next run (IR1); now extending it to multi-pixel sky-localization priors. Second author of the method paper (under review, ApJ).</li>
+      <li><strong>Real-Time Parameter Estimation:</strong> Improved minutes-latency source parameter estimation from GstLAL low-latency SNR data by combining MCMC, nested sampling and prior updating, raising P-P plot calibration consistency in validation by 33%.</li>
+      <li><strong>IMBH Search (Lead, O4b/O4c):</strong> Lead the offline intermediate-mass black hole search; improved the background noise model using time-slid triggers, making the likelihood-ratio ranking statistic more reliable. Contributed to the GWTC-5 and GWTC-6 catalogs.</li>
+      <li><strong>Pipeline Engineering:</strong> Maintain the GstLAL hybrid C++/Python pipeline, processing terabytes of streaming data with sub-second latency for real-time trigger generation.</li>
     </ul>
 
     <h3>Undergraduate Researcher &mdash; Stochastic Modeling &amp; Simulation</h3>
     <p class="role">Nanyang Technological University &middot; Singapore &middot; May 2020 &ndash; Aug 2022</p>
     <ul>
-      <li><strong>Algorithmic Speedup:</strong> First author of <em>Dynamics, Statistics, and Task Allocation of Foraging Ants</em>. Optimized the agent-based simulation by combining MCMC with a customized random-walk algorithm.</li>
-      <li><strong>Performance Gain:</strong> Reduced simulation runtime from days to hours (~50&times; speedup) through code optimization and efficient sampling strategies.</li>
+      <li>Modeled foraging dynamics with correlated random walks and time-delay ODEs; combined MCMC with a customized random-walk sampler, cutting simulation runtime from days to hours (~50&times;). First-author paper in <em>Phys. Rev. E</em>.</li>
     </ul>
 
-    <h2>Selected Quantitative Projects</h2>
+    <h2>Quant &amp; Data Science Projects</h2>
+    <p>Longer write-ups, including a Kalman-filter project, are on the <a href="/quant">Quant &amp; Data Science</a> page.</p>
+
+    <h3>Cross-Sectional Equity Momentum Pipeline</h3>
+    <p class="role">Python, pandas, statsmodels, pytest, CRSP/WRDS &middot; Apr 2026 &ndash; May 2026 &middot; <a href="https://github.com/NoahZ969/momentum-pipeline" target="_blank" rel="noopener">GitHub</a></p>
+    <ul>
+      <li>Reproduced 12&ndash;1 momentum as a reproducible research pipeline under a pre-registered analysis plan: rebuilt a point-in-time S&amp;P 500 universe by entity-matching external membership data to CRSP, with delisting returns, trading costs, look-ahead unit tests, and a single-shot 2020&ndash;2024 holdout.</li>
+      <li>Long-short returns correlate 0.90 in-sample and 0.83 out-of-sample with the published Ken French UMD factor.</li>
+    </ul>
+
+    <h3>Walk-Forward Return Prediction with an Empirical Null</h3>
+    <p class="role">Python, NumPy, Ridge Regression &middot; Sep 2026</p>
+    <ul>
+      <li>Purged walk-forward ridge model forecasting next-day SPY returns, with leakage-safe splits and train-only standardization.</li>
+      <li>Out-of-sample information coefficient 0.088, 3.2&sigma; above a block-permutation null that preserves autocorrelation (<code>p &lt; 0.005</code>).</li>
+    </ul>
 
     <h3>WorldQuant Int&rsquo;l Quant Championship 2026 &mdash; Stage 2, USA Region</h3>
-    <p class="role">BRAIN, Fast Expression DSL &middot; Mar 2026 &ndash; May 2026</p>
+    <p class="role">WorldQuant BRAIN, Fast Expression &middot; Mar 2026 &ndash; May 2026</p>
     <ul>
-      <li><strong>Overfitting Diagnosis:</strong> Ablated composite alphas to test signal attribution: a fundamental-anchored composite (Sharpe 1.59) collapsed to &minus;0.35 once its price-volume component was removed, showing the alpha had inherited the pool&rsquo;s PV signal rather than diversifying it. Codified a per-ingredient standalone-Sharpe check before any multi-field combination.</li>
-      <li><strong>Systematic Factor Search:</strong> Applied a fixed six-transform template across BRAIN&rsquo;s data sub-categories, logging 100+ (field &times; transform) simulations to decouple field selection from formula design and turn alpha search into a measurable hit-rate problem.</li>
-      <li><strong>Results:</strong> Submitted 11 cross-sectional alphas on the TOP3000 USA universe (delay-1, subindustry-neutral); the four best-performing held out-of-sample Sharpe 1.3&ndash;2.0 over the full 2019&ndash;2023 window (best single alpha 1.98), turnover 20&ndash;45%, max drawdown &lt; 7%, self-correlation &lt; 0.7. Advanced past Stage 1 among 156,000+ registrants.</li>
+      <li>Advanced past Stage 1 among 156,000+ registrants with 11 cross-sectional alphas (predictive signals) on 3,000 U.S. stocks; best four out-of-sample Sharpe 1.3&ndash;2.0.</li>
+      <li>A feature ablation showed a composite&rsquo;s Sharpe collapsing 1.59 &rarr; &minus;0.35 without its price-volume component, which led to a standalone check of every ingredient before combining signals.</li>
     </ul>
 
-    <h3>High-Frequency Market Microstructure Signal Extraction</h3>
-    <p class="role">Python, Kalman Filter, MLE &middot; Aug 2025 &ndash; Feb 2026</p>
+    <h2>Publications &amp; Presentations</h2>
     <ul>
-      <li><strong>State-Space Modeling:</strong> Developed a Kalman Filter to separate efficient price signals from microstructure noise (bid-ask bounce) in high-frequency Bitcoin tick data, modeling price evolution as a random walk with mean-reverting error.</li>
-      <li><strong>Constrained Optimization:</strong> Implemented Maximum Likelihood Estimation (MLE) to calibrate process / measurement noise matrices (Q and R). Diagnosed and resolved regime-switching overfitting by anchoring measurement noise to empirical tick-size volatility.</li>
-      <li><strong>Benchmarking:</strong> Validated custom manual implementation against the EM algorithm (via <code>pykalman</code>), demonstrating superior signal retention in high-volatility regimes.</li>
+      <li>L. Tsukada, <strong>N. Zhang</strong>, et al., &ldquo;Fast targeted gravitational-wave followup search for compact binary mergers using GstLAL pipeline,&rdquo; <a href="https://arxiv.org/abs/2606.22266" target="_blank" rel="noopener">arXiv:2606.22266</a> (under review, ApJ).</li>
+      <li><strong>N. Zhang</strong> and Yong, &ldquo;Dynamics, Statistics, and Task Allocation of Foraging Ants,&rdquo; <em>Phys. Rev. E</em> <strong>108</strong>, 054306 (2023).</li>
+      <li>LIGO&ndash;Virgo&ndash;KAGRA Collaboration, GWTC-5 and GWTC-6 catalog papers (contributor, IMBH search).</li>
+      <li>Talk: &ldquo;Toward fast targeted gravitational-wave followup search for compact binary coalescences using GstLAL inspiral pipeline,&rdquo; APS Meeting, Mar 18, 2026.</li>
     </ul>
 
     <h2>Technical Skills</h2>
     <ul>
-      <li><strong>Languages / Libraries:</strong> C++ (STL, Boost); Python (NumPy, SciPy, Pandas, ccxt, pykalman); SQL; LaTeX.</li>
-      <li><strong>Computation:</strong> High-Performance Computing (HPC), MPI, HTCondor, Git, Linux/Unix.</li>
-      <li><strong>Quantitative Methods:</strong> Monte Carlo Simulation (MCMC), Bayesian Inference, Time-Series Analysis, MLE, Signal Processing, Alpha Research (WorldQuant BRAIN).</li>
+      <li><strong>Statistics:</strong> Bayesian Inference, MCMC, Nested Sampling, MLE, Hypothesis Testing, Bootstrap, Permutation Tests, FDR.</li>
+      <li><strong>Machine Learning:</strong> Regularized (Ridge) Regression, Time-Series Forecasting, Walk-Forward / Purged &amp; Nested CV, PCA/SVD, k-Means Clustering, Kalman Filtering.</li>
+      <li><strong>Quantitative Finance:</strong> Alpha Research (WorldQuant BRAIN), Factor Models &amp; Regression, Time-Series Analysis, Signal Processing.</li>
+      <li><strong>Programming:</strong> Python (NumPy, SciPy, pandas, statsmodels), C++ (STL, Boost), SQL; HPC, MPI, HTCondor, Git, Linux.</li>
+      <li><strong>Data:</strong> CRSP (WRDS), Ken French Data Library, high-frequency tick data, TB-scale streaming detector data.</li>
+      <li><strong>Languages:</strong> English (fluent, all research and writing), Mandarin (native).</li>
     </ul>
 
-    <h2>Awards</h2>
+    <h2>Honors</h2>
     <ul>
-      <li><strong>Silver Medalist (2nd Place)</strong>, PLANCKS Physics Competition (Singapore) &mdash; May 2022.</li>
-      <li><strong>Best Presentation Award</strong>, Odyssey Research Symposium &mdash; Dec 2020.</li>
+      <li><strong>Silver Medal</strong>, PLANCKS Physics Competition (Singapore) &mdash; 2022.</li>
+      <li><strong>Best Presentation Award</strong>, Odyssey Research Symposium &mdash; 2020.</li>
     </ul>
   </div>
 
   <div data-lang="zh">
     <h1>简历</h1>
     <p>
-      <a href="/cv-zh.pdf" target="_blank" rel="noopener">下载简历（PDF）</a>
+      下载一页版简历：
+      <a href="/cv-zh.pdf" target="_blank" rel="noopener">中文 &middot; 量化（PDF）</a> &middot;
+      <a href="/cv.pdf" target="_blank" rel="noopener">English &middot; Quant（PDF）</a> &middot;
+      <a href="/cv-ds.pdf" target="_blank" rel="noopener">English &middot; Data Science（PDF）</a>
     </p>
 
     <h2>教育背景</h2>
     <ul>
       <li>
-        <strong>物理学博士</strong>，佐治亚理工学院 &mdash; 2023 年 8 月 &ndash; 预计 2028 年<br />
-        导师：Surabhi Sachdev。研究方向：引力波探测、GstLAL 流水线、低延迟信号处理。
+        <strong>物理学博士</strong>，佐治亚理工学院 &mdash; 2023.08 &ndash; 至今（预计 2028 年毕业）<br />
+        导师：Surabhi Sachdev。研究方向：引力波低延迟信号处理、贝叶斯统计推断。
       </li>
       <li>
-        <strong>计算科学与工程硕士</strong>，佐治亚理工学院 &mdash; 2023 年 8 月 &ndash; 2025 年 5 月<br />
-        主要课程：高性能计算、计算数据分析、建模与仿真、算法。
+        <strong>计算科学与工程（CSE）硕士</strong>，佐治亚理工学院 &mdash; 2023.08 &ndash; 2025.05<br />
+        核心课程：高性能计算、计算数据分析、建模与仿真、算法。
       </li>
       <li>
-        <strong>物理学学士（一等荣誉）</strong>，南洋理工大学（新加坡）&mdash; 2019 年 8 月 &ndash; 2023 年 5 月<br />
-        GPA：4.62 / 5.00（专业 GPA：5.00 / 5.00）。获新加坡教育部全额奖学金。
+        <strong>物理学学士（一等荣誉学位）</strong>，南洋理工大学（新加坡）&mdash; 2019.08 &ndash; 2023.05<br />
+        GPA 4.62 / 5.00（专业课 5.00 / 5.00）；新加坡教育部全额奖学金。
       </li>
     </ul>
 
-    <h2>研究与量化经历</h2>
+    <h2>科研经历</h2>
 
-    <h3>研究助理 &mdash; LIGO 科学合作组织</h3>
-    <p class="role">佐治亚理工学院 &middot; 亚特兰大，佐治亚州 &middot; 2023 年 8 月 &ndash; 至今</p>
+    <h3>研究助理 &mdash; LIGO 科学合作组织（佐治亚理工课题组）</h3>
+    <p class="role">引力波低延迟探测与参数推断 &middot; 美国亚特兰大 &middot; 2023.08 &ndash; 至今</p>
     <ul>
-      <li><strong>搜索算法优化：</strong>共同设计了 GstLAL 的「定向搜索」方法，将电磁（EM）对应体数据作为贝叶斯先验融入搜索流程。在保持相同低延迟性能的前提下，将信号探测灵敏度提升了 30 个数量级。</li>
-      <li><strong>统计验证：</strong>负责 SGNL 流水线的参数估计（PE）审核。优化统计估计量，使 P-P 图（概率-概率图）的一致性与结果可靠性提升了 33%。</li>
-      <li><strong>生产分析：</strong>参与 GWTC-5 生产运行中中等质量黑洞（IMBH）的离线搜索工作（数据分析与背景统计）。</li>
-      <li><strong>流水线工程：</strong>维护 GstLAL 的 C++/Python 混合流水线，以亚秒级延迟处理 TB 量级的流式数据，用于实时触发候选事件的生成。参与引力波暂现源目录（GWTC）研究。</li>
+      <li><strong>定向后续搜索：</strong>共同设计 GstLAL 定向搜索方法，将外部电磁触发的到达时间与天区位置作为贝叶斯先验引入似然比排序统计量；延迟不变的前提下，关联候选体的误报率（FAR）降低数个数量级。</li>
+      <li><strong>部署与发表：</strong>已用于 O4a 观测期，正在为下一观测期（IR1）部署，并扩展至多像素天区先验；方法论文第二作者（ApJ 审稿中）。</li>
+      <li><strong>实时参数估计（RTPE）：</strong>基于 GstLAL 低延迟搜索的 SNR 数据，在分钟级延迟内估计引力波源参数；结合 MCMC、nested sampling 与先验更新提升精度，验证集 P-P 图一致性提升 33%。</li>
+      <li><strong>IMBH 搜索（O4b/O4c 负责人）：</strong>主导中等质量黑洞离线搜索；利用 time-slide 触发改进背景噪声模型，提升似然比排序统计量的可靠性；参与 GWTC-5、GWTC-6 星表工作。</li>
+      <li><strong>管线工程：</strong>维护 GstLAL 的 C++/Python 混合管线，以亚秒级延迟处理 TB 量级流式数据并实时生成触发。</li>
     </ul>
 
-    <h3>本科研究助理 &mdash; 随机建模与仿真</h3>
-    <p class="role">南洋理工大学 &middot; 新加坡 &middot; 2020 年 5 月 &ndash; 2022 年 8 月</p>
+    <h3>本科研究助理 &mdash; 随机过程建模与仿真</h3>
+    <p class="role">南洋理工大学 &middot; 新加坡 &middot; 2020.05 &ndash; 2022.08</p>
     <ul>
-      <li><strong>算法加速：</strong><em>《觅食蚂蚁的动力学、统计与任务分配》</em>第一作者。将 MCMC 与自定义随机游走算法相结合，优化了基于代理的模拟。</li>
-      <li><strong>性能提升：</strong>通过代码优化与高效采样策略，将模拟运行时间从数天缩短至数小时（~50&times; 加速）。</li>
+      <li>用相关随机游走与时滞微分方程建模觅食行为；结合 MCMC 与定制采样，仿真提速约 50 倍。<em>Phys. Rev. E</em> 论文第一作者。</li>
     </ul>
 
-    <h2>精选量化项目</h2>
+    <h2>量化与数据科学项目</h2>
+    <p>更详细的介绍（包括卡尔曼滤波项目）见<a href="/quant">量化与数据科学</a>页面。</p>
 
-    <h3>WorldQuant 国际量化锦标赛 2026 &mdash; 第二阶段（美国赛区）</h3>
-    <p class="role">BRAIN、Fast Expression DSL &middot; 2026 年 3 月 &ndash; 2026 年 5 月</p>
+    <h3>截面股票动量研究管线</h3>
+    <p class="role">Python、pandas、statsmodels、pytest、CRSP/WRDS &middot; 2026.04 &ndash; 2026.05 &middot; <a href="https://github.com/NoahZ969/momentum-pipeline" target="_blank" rel="noopener">GitHub</a> &middot; 独立完成</p>
     <ul>
-      <li><strong>过拟合诊断：</strong>通过消融实验检验复合 alpha 的信号归因：一个以基本面为核心的复合 alpha（夏普比率 1.59）在剔除其量价分量后骤降至 &minus;0.35，说明该 alpha 只是继承了资产池原有的量价信号，而非提供了新的分散化来源。据此确立了在任何多字段组合前先行检验各成分独立夏普比率的流程。</li>
-      <li><strong>系统化因子搜索：</strong>在 BRAIN 的各数据子类别上统一套用六种变换模板，累计记录 100+ 组（字段 &times; 变换）模拟，将字段选择与公式设计解耦，把 alpha 搜索转化为可量化的命中率问题。</li>
-      <li><strong>成果：</strong>在 TOP3000 美股股票池上提交 11 个横截面 alpha（delay-1，子行业中性）；其中表现最佳的四个在 2019&ndash;2023 完整区间的样本外夏普比率达 1.3&ndash;2.0（单个最优为 1.98），换手率 20&ndash;45%，最大回撤 &lt; 7%，自相关性 &lt; 0.7。从 156,000+ 名参赛者中晋级第二阶段。</li>
+      <li>按预注册分析方案复现 12&ndash;1 月动量因子，构建可复现的研究管线：将外部成分股数据与 CRSP 做实体匹配，按时点重建 S&amp;P 500 成分股；处理退市收益与交易成本，加入前视偏差单元测试，样本外区间（2020&ndash;2024）只评估一次。</li>
+      <li>多空组合与已发表的 Ken French UMD 因子相关系数：样本内 0.90，样本外 0.83。</li>
     </ul>
 
-    <h3>高频市场微观结构信号提取</h3>
-    <p class="role">Python、卡尔曼滤波、极大似然估计 &middot; 2025 年 8 月 &ndash; 2026 年 2 月</p>
+    <h3>滚动前推收益预测与经验零分布检验</h3>
+    <p class="role">Python、NumPy、岭回归、时间序列交叉验证 &middot; 2026.09 &middot; 独立完成</p>
     <ul>
-      <li><strong>状态空间建模：</strong>构建卡尔曼滤波器，将高频比特币逐笔数据中的有效价格信号与微观结构噪声（买卖价差跳动）分离，并将价格演化建模为带均值回复误差项的随机游走。</li>
-      <li><strong>约束优化：</strong>通过极大似然估计（MLE）校准过程噪声与测量噪声矩阵（Q 与 R）。通过将测量噪声锚定于经验上的最小变动单位波动率，诊断并解决了状态切换造成的过拟合问题。</li>
-      <li><strong>对比验证：</strong>将自实现版本与 EM 算法（基于 <code>pykalman</code>）进行对比测试，在高波动区间下信号保留能力更优。</li>
+      <li>岭回归预测 SPY 次日收益（滚动前推 + purge），切分防止信息泄漏，标准化参数只用训练集估计。</li>
+      <li>样本外 IC 0.088，高出保留自相关的块置换检验零分布 3.2 个标准差（<code>p &lt; 0.005</code>）。</li>
     </ul>
 
-    <h2>技术技能</h2>
+    <h3>WorldQuant 国际量化锦标赛（IQC）2026 第二阶段（美国赛区）</h3>
+    <p class="role">WorldQuant BRAIN、Fast Expression &middot; 2026.03 &ndash; 2026.05 &middot; 个人参赛</p>
     <ul>
-      <li><strong>编程语言 / 库：</strong>C++（STL, Boost）；Python（NumPy, SciPy, Pandas, ccxt, pykalman）；SQL；LaTeX。</li>
-      <li><strong>计算环境：</strong>高性能计算（HPC）、MPI、HTCondor、Git、Linux/Unix。</li>
-      <li><strong>量化方法：</strong>蒙特卡洛模拟（MCMC）、贝叶斯推断、时间序列分析、极大似然估计、信号处理、Alpha 研究（WorldQuant BRAIN）。</li>
+      <li>在 15.6 万+ 报名者中进入第二阶段，在 3,000 只美股上提交 11 个截面 alpha（预测信号），最优四个样本外 Sharpe 1.3&ndash;2.0。</li>
+      <li>消融实验发现复合 alpha 剔除价量分量后 Sharpe 从 1.59 降至 &minus;0.35，据此确立组合前的单信号检验准则。</li>
     </ul>
 
-    <h2>奖项</h2>
+    <h2>论文与报告</h2>
     <ul>
-      <li><strong>银奖（第二名）</strong>，PLANCKS 物理学竞赛（新加坡）&mdash; 2022 年 5 月。</li>
-      <li><strong>最佳报告奖</strong>，Odyssey 研究研讨会 &mdash; 2020 年 12 月。</li>
+      <li>L. Tsukada, <strong>N. Zhang</strong>, et al., &ldquo;Fast targeted gravitational-wave followup search for compact binary mergers using GstLAL pipeline,&rdquo; <a href="https://arxiv.org/abs/2606.22266" target="_blank" rel="noopener">arXiv:2606.22266</a>（ApJ 审稿中，第二作者）。</li>
+      <li><strong>N. Zhang</strong> and Yong, &ldquo;Dynamics, Statistics, and Task Allocation of Foraging Ants,&rdquo; <em>Phys. Rev. E</em> <strong>108</strong>, 054306 (2023)（第一作者）。</li>
+      <li>LIGO&ndash;Virgo&ndash;KAGRA 合作组织，GWTC-5、GWTC-6 星表论文（IMBH 搜索贡献者）。</li>
+      <li>报告：&ldquo;Toward fast targeted gravitational-wave followup search for compact binary coalescences using GstLAL inspiral pipeline,&rdquo; APS Meeting，2026.03.18。</li>
+    </ul>
+
+    <h2>专业技能</h2>
+    <ul>
+      <li><strong>统计：</strong>贝叶斯推断、MCMC、nested sampling、极大似然估计、假设检验、Bootstrap、置换检验、FDR。</li>
+      <li><strong>机器学习：</strong>岭回归等正则化回归、时间序列预测、滚动前推 / 清洗式与嵌套交叉验证、PCA/SVD、k-means 聚类、卡尔曼滤波。</li>
+      <li><strong>量化方法：</strong>Alpha 研究（WorldQuant BRAIN）、因子模型与回归、时间序列分析、信号处理。</li>
+      <li><strong>编程：</strong>Python（NumPy, SciPy, pandas, statsmodels）、C++（STL, Boost）、SQL；HPC、MPI、HTCondor、Git、Linux。</li>
+      <li><strong>数据：</strong>CRSP（WRDS）、Ken French 因子库、高频 tick 数据、TB 量级探测器流式数据。</li>
+      <li><strong>语言：</strong>英语（全英文科研与论文写作）、普通话（母语）。</li>
+    </ul>
+
+    <h2>荣誉</h2>
+    <ul>
+      <li><strong>银牌</strong>，PLANCKS 物理竞赛（新加坡）&mdash; 2022。</li>
+      <li><strong>最佳报告奖</strong>，Odyssey 科研研讨会 &mdash; 2020。</li>
     </ul>
   </div>
 </BaseLayout>
